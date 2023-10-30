@@ -279,3 +279,11 @@ a {
     color: #6D737E;
 }
 
+.btn-close  {
+    color: white !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+.btn-close:hover  {
+    color: white !important;
+    background-color: rgb(255, 255, 255)  !important;
+}
