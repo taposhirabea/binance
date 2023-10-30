@@ -223,6 +223,7 @@ a {
     color: #6d737e;
     border: none !important;
     /* font-weight: 600; */
+    font-size: 15px !important;
 }
 
 .input-group-text {
