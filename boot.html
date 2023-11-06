@@ -491,7 +491,7 @@
                                 <div class="pb-2">Avbl <span class="">-BTC</span></div>
                                 <form>
                                   <div class="input-group input-group-lg mb-3 market-value ">
-                                    <span class="input-group-text market ">Price</span>
+                                    <span class="input-group-text market">Price</span>
                                     <span class="form-control text-light text-end market pe-1 " >Market</span>
                                     <span class="input-group-text text-light market ">USDT</span>
                                   </div>
@@ -585,7 +585,7 @@
               </div>
           </section>
           <!-- working on it -->
-            <section class="col-3 py-2">
+            <section class="col-3 py-2 px-0">
               <div class="input-group mb-3 align-items-center rounded py-1 px-2" style="background: #4e525f;">
                 <div class="input-group-prepend">
                   <i class="fas fa-search text-secondary rounded" ></i>
@@ -610,7 +610,7 @@
                   <button class="nav-link px-2" id="pills-BTC-tab" data-bs-toggle="pill" data-bs-target="#pills-BTC" type="button" role="tab" aria-controls="pills-BTC" aria-selected="false" >BTC</button>
                 </li>
               </ul>
-              <div class="py-2 text-secondary"  style="font-size: 12px; ">
+              <div class="px-3 text-secondary"  style="font-size: 12px; ">
                 <div class="col d-flex">
                     <div class="d-flex col-3">Pair
                         <div class="caret-icon">
@@ -646,7 +646,7 @@
                 <div class="tab-pane fade" id="pills-FDUSD" role="tabpanel" aria-labelledby="pills-FDUSD-tab" tabindex="0">FDUSD</div>
                 <div class="tab-pane fade show active" id="pills-TUSD" role="tabpanel" aria-labelledby="pills-TUSD-tab" tabindex="0">
                   <div class="scroll-container" >
-                    <div class="col d-flex py-1">
+                    <div class="col d-flex py-1 px-3">
                         <div class="col-3 d-flex gap-1" style="font-size: 11px;">
                             <i class="fa-solid fa-star"></i>
                             <div class="text-uppercase text-light" >
@@ -667,17 +667,17 @@
               </div>
 
               <section>
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills " id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-market-trades-tab" data-bs-toggle="pill" data-bs-target="#pills-market-trades" type="button" role="tab" aria-controls="pills-market-trades" aria-selected="true">Market Trades</button>
+                    <button class="nav-link active " id="pills-market-trades-tab" data-bs-toggle="pill" data-bs-target="#pills-market-trades" type="button" role="tab" aria-controls="pills-market-trades" aria-selected="true">Market Trades</button>
                   </li>
                   <li class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-my-trades-tab" data-bs-toggle="pill" data-bs-target="#pills-my-trades" type="button" role="tab" aria-controls="pills-my-trades" aria-selected="false">My Trades</button>
                   </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <div style="border-top: 1px solid #2A2D35; border-bottom: 1px solid #2A2D35;">
+                <div class="tab-content" id="pills-tabContent" style="height: 305px; border-bottom: 1px solid #2A2D35;">
+                  <div class="tab-pane fade show active" id="pills-market-trades" role="tabpanel" aria-labelledby="pills-market-trades-tab" tabindex="0">
+                    <div style="border-top: 1px solid #2A2D35;">
                     
                       <div class="p-3 text-secondary"  style="font-size: 12px; ">
                           <div class="col d-flex">
@@ -685,21 +685,28 @@
                               <div class="col-5 text-end" style="font-size: 10px;">Amount(BTC)</div>
                               <div class="col-4 text-end text-secondary" style="font-size: 10px;">Time</div>
                           </div>
-                          <div class="scroll-container" style="height: 250px;">
+                          <div class="scroll-container" >
                               <div class="col d-flex">
                                   <div class="col-3 text-danger">11111.00</div>
                                   <div class="col-5 text-end " style="color: #B8BDC5; font-size: 10px;">0000.99</div>
                                   <div class="col-4 text-end" style="color: #B8BDC5; font-size: 10px;">99.67</div>
                               </div>
+                              
                           </div>
                       </div>
               </div>
                   </div>
-                  <div class="tab-pane fade" id="pills-my-trades" role="tabpanel" aria-labelledby="pills-my-trades-tab" tabindex="0">My Trades</div>
+                  <div class="tab-pane fade" id="pills-my-trades" role="tabpanel" aria-labelledby="pills-my-trades-tab" tabindex="0">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 15rem;">
+                      <div class="text-warning h-4">
+                          <div>Log In <span class="text-light">or</span> Register Now <span class="text-light">to trade</span></div>
+                      </div>
+                  </div>
+                  </div>
                 </div>
               </section>
               <section>
-                <div class="" style="padding-top: 10px;">
+                <div class="p-3" >
                   <div class="d-flex  align-items-center justify-content-between">
                       <div class="d-flex align-items-center gap-1">
                           <div class=" text-light">Top Movers</div>
@@ -999,7 +1006,7 @@
                 <div class="col d-flex">
                     <div class="col-3">Price(USDT)</div>
                     <div class="col-5 text-end" style="color: #B8BDC5; font-size: 10px;"> Amount(BTC)</div>
-                    <div class="col-4 text-end" style="font-size: 10px;">Total</div>
+                    <div class="col-4 text-end text-light" style="font-size: 10px;">Total</div>
                     
                 </div>
                <div class="col d-flex">
@@ -1074,7 +1081,7 @@
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <button class="nav-link active" id="spot-tab" data-bs-toggle="tab" data-bs-target="#spot" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Spot</button>
-            <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Grid</button>
+            <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cross 5x</button>
           </div>
         </nav>
         <div class="tab-content text-light" id="nav-tabContent">
@@ -1093,10 +1100,10 @@
                       <button class="nav-link active selected-limit" id="pills-md-buy-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-limit" type="button" role="tab" aria-controls="pills-md-buy-limit" aria-selected="true">Limit</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link selected-limit" id="pills-xs-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-market" type="button" role="tab" aria-controls="pills-xs-buy-market" aria-selected="false">Market</button>
+                      <button class="nav-link selected-limit" id="pills-md-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-market" type="button" role="tab" aria-controls="pills-md-buy-market" aria-selected="false">Market</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link selected-limit" id="pills-xs-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-buy-stop-limit" aria-selected="false">Stop-limit</button>
+                      <button class="nav-link selected-limit" id="pills-md-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-stop-limit" type="button" role="tab" aria-controls="pills-md-buy-stop-limit" aria-selected="false">Stop-limit</button>
                     </li>
                     <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
                     <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
@@ -1128,9 +1135,61 @@
                    
                       </div>
                     </div>
-                    <!-- <div class="tab-pane fade" id="pills-md-buy-market" role="tabpanel" aria-labelledby="pills-md-buy-market-tab">
+                    <div class="tab-pane fade" id="pills-md-buy-market" role="tabpanel" aria-labelledby="pills-md-buy-market-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Price</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit text-light">Total</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">USDT</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
                     </div>
-                    <div class="tab-pane fade" id="pills-md-buy-stop-limit" role="tabpanel" aria-labelledby="pills-md-buy-stop-limit-tab">Stop</div> -->
+                   
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-md-buy-stop-limit" role="tabpanel" aria-labelledby="pills-md-buy-stop-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">- USDT</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Stop</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Limit</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Amount</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">BTC</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                    </div>
+                   
+                      </div>
+                    </div>
                   </div>
                   
               <!-- </div> -->
@@ -1179,8 +1238,59 @@
                    
                       </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-md-market" role="tabpanel" aria-labelledby="pills-md-market-tab">market</div>
-                    <div class="tab-pane fade" id="pills-md-stop-limit" role="tabpanel" aria-labelledby="pills-md-stop-limit-tab">Stop</div>
+                    <div class="tab-pane fade" id="pills-md-market" role="tabpanel" aria-labelledby="pills-md-market-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <form>
+                          <div class="input-group input-group-lg mb-3 market-value ">
+                            <span class="input-group-text market limit">Price</span>
+                            <span class="form-control text-light text-end market limit pe-1 ">Market</span>
+                            <span class="input-group-text text-light market limit ">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit text-light">Amount</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">BTC</span>
+                          </div>
+                          <input type="range" class="form-range" id="customRange1">
+                        </form>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                          <button class="text-warning bg-transparent log-in">Log In</button>
+                          <div class="text-light">or</div>
+                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-md-stop-limit" role="tabpanel" aria-labelledby="pills-md-stop-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <form>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Stop</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Limit</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Amount</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">BTC</span>
+                          </div>
+                          <input type="range" class="form-range" id="customRange1">
+                        </form>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                          <button class="text-warning bg-transparent log-in">Log In</button>
+                          <div class="text-light">or</div>
+                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                      </div>
+                      </div>
+                    </div>
                   </div>
                   
               <!-- </div> -->
@@ -1189,11 +1299,214 @@
           </div>
           <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
             <!--start sell-->
-            <div class="d-flex gap-2 py-2  align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-              <button class="text-warning  bg-transparent login">Log In</button>
-              <div class="text-light">or</div>
-              <button class="text-warning  bg-transparent login">Register Now</button>
-          </div>
+            <div class="nav nav-pills buy-sell-nav-pills mb-3 mt-3 " id="pills-tab" role="tablist">
+              <button class="col nav-link active select-green" id="pills-xs-cross-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy" type="button" role="tab" aria-controls="pills-xs-cross-buy" aria-selected="true">Buy</button>
+              <button class="col nav-link select-red" id="pills-xs-cross-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-sell" type="button" role="tab" aria-controls="pills-xs-cross-sell" aria-selected="false">Sell</button>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-xs-cross-buy" role="tabpanel" aria-labelledby="pills-xs-cross-buy-tab">
+                <!-- usdt buy sell-->
+                  <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active selected-limit" id="pills-xs-cross-buy-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-limit" type="button" role="tab" aria-controls="pills-xs-cross-buy-limit" aria-selected="true">Limit</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link selected-limit" id="pills-xs-cross-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-market" type="button" role="tab" aria-controls="pills-xs-cross-buy-market" aria-selected="false">Market</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link selected-limit" id="pills-xs-cross-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-cross-buy-stop-limit" aria-selected="false">Stop-limit</button>
+                    </li>
+                    <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
+                    <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
+                  </ul>
+
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-xs-cross-buy-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Price</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Amount</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">BTC</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                    </div>
+                   
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-xs-cross-buy-market" role="tabpanel" aria-labelledby="pills-xs-cross-buy-market-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Price</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit text-light">Total</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">USDT</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                    </div>
+                   
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-xs-cross-buy-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-stop-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">- USDT</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Stop</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Limit</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Amount</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">BTC</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                    </div>
+                   
+                      </div>
+                    </div>
+                  </div>
+                  
+              <!-- </div> -->
+              </div>
+             
+              <!-- d-md sell details-->
+              <div class="tab-pane fade " id="pills-xs-cross-sell" role="tabpanel" aria-labelledby="pills-xs-cross-sell-tab">
+                <!-- usdt buy sell-->
+                  <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active selected-limit" id="pills-xs-cross-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-limit" type="button" role="tab" aria-controls="pills-xs-cross-limit" aria-selected="true">Limit</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link selected-limit" id="pills-xs-cross-market-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-market" type="button" role="tab" aria-controls="pills-xs-cross-market" aria-selected="false">Market</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link selected-limit" id="pills-xs-cross-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-stop-limit" type="button" role="tab" aria-controls="pills-xs-cross-stop-limit" aria-selected="false">Stop-limit</button>
+                    </li>
+                    <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
+                    <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
+                  </ul>
+
+                  <div class="tab-content working3" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-xs-cross-limit" role="tabpanel" aria-labelledby="pills-xs-cross-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                      <form>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Price</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit ">USDT</span>
+                        </div>
+                        <div class="input-group input-group-lg mb-3 input-value">
+                          <span class="input-group-text limit">Amount</span>
+                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text text-light limit">BTC</span>
+                        </div>
+                        <input type="range" class="form-range" id="customRange1">
+                      </form>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                        <button class="text-warning bg-transparent log-in">Log In</button>
+                        <div class="text-light">or</div>
+                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                    </div>
+                   
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-xs-cross-market" role="tabpanel" aria-labelledby="pills-xs-cross-market-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <form>
+                          <div class="input-group input-group-lg mb-3 market-value ">
+                            <span class="input-group-text market limit">Price</span>
+                            <span class="form-control text-light text-end market limit pe-1 ">Market</span>
+                            <span class="input-group-text text-light market limit ">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit text-light">Amount</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">BTC</span>
+                          </div>
+                          <input type="range" class="form-range" id="customRange1">
+                        </form>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                          <button class="text-warning bg-transparent log-in">Log In</button>
+                          <div class="text-light">or</div>
+                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-xs-cross-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-stop-limit-tab">
+                      <div class="col">
+                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <form>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Stop</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Limit</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">USDT</span>
+                          </div>
+                          <div class="input-group input-group-lg mb-3 input-value">
+                            <span class="input-group-text limit">Amount</span>
+                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text text-light limit">BTC</span>
+                          </div>
+                          <input type="range" class="form-range" id="customRange1">
+                        </form>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                          <button class="text-warning bg-transparent log-in">Log In</button>
+                          <div class="text-light">or</div>
+                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+              <!-- </div> -->
+              </div>
+            </div>
             <!--finish sell-->
           </div>
         </div>
@@ -1218,7 +1531,7 @@
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="xs-spot-tab" data-bs-toggle="tab" data-bs-target="#xs-spot" type="button" role="tab" aria-controls="nav-xs-spot" aria-selected="true">Spot</button>
-                <button class="nav-link" id="xs-grid-tab" data-bs-toggle="tab" data-bs-target="#xs-grid" type="button" role="tab" aria-controls="nav-xs-grid" aria-selected="false">Grid</button>
+                <button class="nav-link" id="xs-grid-tab" data-bs-toggle="tab" data-bs-target="#xs-grid" type="button" role="tab" aria-controls="nav-xs-grid" aria-selected="false">working Cross 5x</button>
               </div>
             </nav>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1285,7 +1598,7 @@
                               <span class="input-group-text text-light limit ">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Total</span>
+                              <span class="input-group-text limit text-light">Total</span>
                               <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
                               <span class="input-group-text text-light limit">USDT</span>
                             </div>
@@ -1439,11 +1752,214 @@
               </div>
               <div class="tab-pane fade" id="xs-grid" role="tabpanel" aria-labelledby="xs-grid-tab">
                 <!--start sell-->
-                <div class="d-flex gap-2 py-2  align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                  <button class="text-warning bg-transparent login">Log In</button>
-                  <div class="text-light">or</div>
-                  <button class="text-warning bg-transparent login">Register Now</button>
-              </div>
+                <div class="nav nav-pills buy-sell-nav-pills mb-3 mt-3 " id="pills-tab" role="tablist">
+                  <button class="col nav-link active select-green" id="pills-xs-cross-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy" type="button" role="tab" aria-controls="pills-xs-cross-buy" aria-selected="true">Buy</button>
+                  <button class="col nav-link select-red" id="pills-xs-cross-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-sell" type="button" role="tab" aria-controls="pills-xs-cross-sell" aria-selected="false">Sell</button>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-xs-cross-buy" role="tabpanel" aria-labelledby="pills-xs-cross-buy-tab">
+                    <!-- usdt buy sell-->
+                      <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active selected-limit" id="pills-xs-cross-buy-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-limit" type="button" role="tab" aria-controls="pills-xs-cross-buy-limit" aria-selected="true">Limit</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link selected-limit" id="pills-xs-cross-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-market" type="button" role="tab" aria-controls="pills-xs-cross-buy-market" aria-selected="false">Market</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link selected-limit" id="pills-xs-cross-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-cross-buy-stop-limit" aria-selected="false">Stop-limit</button>
+                        </li>
+                        <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
+                        <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
+                      </ul>
+    
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-xs-cross-buy-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-limit-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                          <form>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Price</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit ">USDT</span>
+                            </div>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Amount</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit">BTC</span>
+                            </div>
+                            <input type="range" class="form-range" id="customRange1">
+                          </form>
+                          <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                            <button class="text-warning bg-transparent log-in">Log In</button>
+                            <div class="text-light">or</div>
+                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                        </div>
+                       
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-xs-cross-buy-market" role="tabpanel" aria-labelledby="pills-xs-cross-buy-market-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                          <form>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Price</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit ">USDT</span>
+                            </div>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit text-light">Total</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit">USDT</span>
+                            </div>
+                            <input type="range" class="form-range" id="customRange1">
+                          </form>
+                          <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                            <button class="text-warning bg-transparent log-in">Log In</button>
+                            <div class="text-light">or</div>
+                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                        </div>
+                       
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-xs-cross-buy-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-stop-limit-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">- USDT</span></div>
+                          <form>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Stop</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit ">USDT</span>
+                            </div>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Limit</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit ">USDT</span>
+                            </div>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Amount</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit">BTC</span>
+                            </div>
+                            <input type="range" class="form-range" id="customRange1">
+                          </form>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                            <button class="text-warning bg-transparent log-in">Log In</button>
+                            <div class="text-light">or</div>
+                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                        </div>
+                       
+                          </div>
+                        </div>
+                      </div>
+                      
+                  <!-- </div> -->
+                  </div>
+                 
+                  <!-- d-md sell details-->
+                  <div class="tab-pane fade " id="pills-xs-cross-sell" role="tabpanel" aria-labelledby="pills-xs-cross-sell-tab">
+                    <!-- usdt buy sell-->
+                      <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active selected-limit" id="pills-xs-cross-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-limit" type="button" role="tab" aria-controls="pills-xs-cross-limit" aria-selected="true">Limit</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link selected-limit" id="pills-xs-cross-market-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-market" type="button" role="tab" aria-controls="pills-xs-cross-market" aria-selected="false">Market</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link selected-limit" id="pills-xs-cross-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-cross-stop-limit" type="button" role="tab" aria-controls="pills-xs-cross-stop-limit" aria-selected="false">Stop-limit</button>
+                        </li>
+                        <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
+                        <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
+                      </ul>
+    
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-xs-cross-limit" role="tabpanel" aria-labelledby="pills-xs-cross-limit-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                          <form>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Price</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit ">USDT</span>
+                            </div>
+                            <div class="input-group input-group-lg mb-3 input-value">
+                              <span class="input-group-text limit">Amount</span>
+                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text text-light limit">BTC</span>
+                            </div>
+                            <input type="range" class="form-range" id="customRange1">
+                          </form>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                            <button class="text-warning bg-transparent log-in">Log In</button>
+                            <div class="text-light">or</div>
+                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                        </div>
+                       
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-xs-cross-market" role="tabpanel" aria-labelledby="pills-xs-cross-market-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                            <form>
+                              <div class="input-group input-group-lg mb-3 market-value ">
+                                <span class="input-group-text market limit">Price</span>
+                                <span class="form-control text-light text-end market limit pe-1 ">Market</span>
+                                <span class="input-group-text text-light market limit ">USDT</span>
+                              </div>
+                              <div class="input-group input-group-lg mb-3 input-value">
+                                <span class="input-group-text limit text-light">Amount</span>
+                                <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text text-light limit">BTC</span>
+                              </div>
+                              <input type="range" class="form-range" id="customRange1">
+                            </form>
+                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                              <button class="text-warning bg-transparent log-in">Log In</button>
+                              <div class="text-light">or</div>
+                              <button class="text-warning  bg-transparent log-in">Register Now</button>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-xs-cross-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-stop-limit-tab">
+                          <div class="col">
+                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                            <form>
+                              <div class="input-group input-group-lg mb-3 input-value">
+                                <span class="input-group-text limit">Stop</span>
+                                <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text text-light limit">USDT</span>
+                              </div>
+                              <div class="input-group input-group-lg mb-3 input-value">
+                                <span class="input-group-text limit">Limit</span>
+                                <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text text-light limit">USDT</span>
+                              </div>
+                              <div class="input-group input-group-lg mb-3 input-value">
+                                <span class="input-group-text limit">Amount</span>
+                                <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text text-light limit">BTC</span>
+                              </div>
+                              <input type="range" class="form-range" id="customRange1">
+                            </form>
+                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
+                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
+                              <button class="text-warning bg-transparent log-in">Log In</button>
+                              <div class="text-light">or</div>
+                              <button class="text-warning  bg-transparent log-in">Register Now</button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                  <!-- </div> -->
+                  </div>
+                </div>
                 <!--finish sell-->
               </div>
             </div>

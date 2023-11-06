@@ -246,6 +246,7 @@ a {
 .market {
     background-color: #6D737E;
     border: none;
+    font-size: 15px !important;
 }
 .market-value:hover {
     border: none;
@@ -288,3 +289,7 @@ a {
     color: white !important;
     background-color: rgb(255, 255, 255)  !important;
 }
+.scroll-container {
+    height: 250px;
+    overflow: auto;
+  }
