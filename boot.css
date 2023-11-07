@@ -293,3 +293,12 @@ a {
     height: 250px;
     overflow: auto;
   }
+
+
+.selector:hover,
+.selector-option:hover, option:hover {
+    
+    display: block !important;
+
+
+}
