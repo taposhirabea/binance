@@ -19,7 +19,7 @@
     <header style="border-bottom: 1px solid #2B3038;">
     <nav class="navbar navbar-expand-lg bg-black py-0">
         <div class="container-fluid ps-4">
-          <a class="navbar-brand mx-0" href="#">
+          <a class="navbar-brand mx-0 py-0" href="#">
             <img src="images/logo.png" class=" logo-img" alt=""/>
           </a>
          <div class="col d-flex justify-content-end align-items-center">
@@ -49,40 +49,41 @@
                 <a class="nav-link" href="#">markets</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">trade</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">Trade</a>
+                <ul class="dropdown-menu toggle-lists">
+                    <li><a class="dropdown-item" href="#">Spot</a></li>
+                    <li><a class="dropdown-item" href="#">Margin</a></li>
+                    <li><a class="dropdown-item" href="#">P2P</a></li>
                   </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    futures
+                <a class="nav-link dropdown-toggle toggle-list" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Futures
                 </a>
-                <ul class="dropdown-menu " >
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu toggle-lists" >
+                  <li><a class="dropdown-item" href="#">USDⓈ-M Futures</a></li>
+                  <li><a class="dropdown-item" href="#">COIN-M Futures</a></li>
+                  <li><a class="dropdown-item" href="#">Options</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="#">earn</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">learn</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">Square</a>
+                <ul class="dropdown-menu toggle-lists">
+                    <li><a class="dropdown-item" href="#">Square</a></li>
+                    <li><a class="dropdown-item" href="#">Academy (Learn & Earn)</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">Research</a></li>
                   </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">more</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">more</a>
+                <ul class="dropdown-menu toggle-lists">
+                    <li><a class="dropdown-item" href="#">VIP & Institutional</a></li>
+                    <li><a class="dropdown-item" href="#">Launchpad</a></li>
+                    <li><a class="dropdown-item" href="#">Mining Pool</a></li>
                   </ul>
               </li>
             </ul>
@@ -90,7 +91,7 @@
  <!-- ........login register button.......  -->
             <div class="navbar-nav" style="overflow: hidden;">
                 <button class="col bg-transparent text-light mx-2 text sign-btn log-in">Log In</button>
-                <button class="col text-dark rounded mx-2 sign-btn px-3 " style=" background-color: #FCD535;">Register</button>
+                <button class="col text-dark rounded m-2 sign-btn px-2 " style=" background-color: #FCD535;">Register</button>
                 <ul class="col navbar-nav gap-1 login" >
                     <li class="nav-item d-none d-md-none d-lg-block">
                         <a class="nav-link active" aria-current="page" href="#">
@@ -168,7 +169,7 @@
                             </div>
                           </div>
                           <div class="row col-md-3  green-apple" style="border-left: 1px solid #545456;">
-                            <span class="text-success" >19,351.17</span>
+                            <span class="text-success fs-3" >19,351.17</span>
                             
                             <span class="text-danger" style="font-size: 11px;">$19,351.17</span>
                           </div>
@@ -233,7 +234,7 @@
                        
                             </div>
                             <div class="row col-md-4  green-apple" style="border-left: 1px solid #545456;">
-                              <span class="text-success" >19,351.17</span>
+                              <span class="text-success fs-3" >19,351.17</span>
                               
                               <span class="text-danger" style="font-size: 11px;">$19,351.17</span>
                             </div>
@@ -360,7 +361,7 @@
                             <div class="text">Original</div>
                             <div class="text">Trading View</div>
                             <div class="text">Depth</div>
-                            <div><i class="fa-solid fa-arrow-right-arrow-left cursor"></i></div>
+                            <div><i class="bi bi-arrows-angle-expand"></i></div>
                             <div><i class="fa-regular fa-boxes-stacked cursor"></i></div>
                
                         </div>
@@ -586,11 +587,13 @@
           </section>
           <!-- working on it -->
             <section class="col-3 py-2 px-0">
-              <div class="input-group mb-3 align-items-center rounded py-1 px-2" style="background: #4e525f;">
-                <div class="input-group-prepend">
-                  <i class="fas fa-search text-secondary rounded" ></i>
+              <div class="p-2">
+                <div class="input-group align-items-center rounded py-1 px-2" style="background: #4e525f;">
+                  <div class="input-group-prepend">
+                    <i class="fas fa-search text-secondary rounded" ></i>
+                  </div>
+                  <input type="search" class="form-control rounded text-light" style="border: none; height: 25px; background: #4e525f; font-size: 13px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
                 </div>
-                <input type="search" class="form-control rounded text-light" style="border: none; height: 25px; background: #4e525f; font-size: 13px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
               </div>
 
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="font-size: 12px;">
@@ -795,20 +798,22 @@
                         <div class=" text">Time</div>
 
                         <!-- <div class=" text d-flex align-items-center">1H <i class="fa-solid fa-caret-down px-2 text-secondary cursor"></i></div> -->
-                        <select class="selector" aria-label="Default select example">
-                          <div class=" selector-option">
+                        <select class="form-select form-select-color selector" aria-label="Default select example">
                             <option selected>1H</option>
                           <option value="1">1m</option>
                           <option value="2">3m</option>
                           <option value="3">5m</option>
-                          </div>
+                          <option value="1">15m</option>
+                          <option value="2">30m</option>
+                          <option value="3">1D</option>
+
                         </select>
+
                         <div ><i class="fa-solid fa-chart-line cursor"></i></div>
                         <div ><i class="fa-solid fa-gear cursor"></i></div>
       
                     </div>
                     <div class="d-flex gap-3" style="font-size: 12px;">
-                        <!-- <div class="text">original <i class="fa-solid fa-caret-down px-2 text-secondary cursor"></i> </div> -->
                       
                         <select class="form-select hover-select" aria-label="Default select example">
                           <option selected>Original <i class="fa-solid fa-caret-down px-2 text-secondary cursor"></i></option>
@@ -842,26 +847,22 @@
                         <div class="col-3 " style="color: #8f9297; ">Amount</div>
 
                         <div class="col-5 text-end" style="color: #8f9297; ">Price </div>
-                        <!-- <div class="col-4 text-end" style="font-size: 10px;">Total</div> -->
                         
                     </div>
                    <div class="col d-flex justify-content-between">
                     <div class="col-3" >11111.00</div>
                     <div class="col-5 text-success text-end" >0000.99</div>
-                    <!-- <div class="col-4 text-end" style="font-size: 10px;">99.67</div> -->
                    </div>
                 </div>
                 <div class="col-6  py-2" style="font-size: 12px; color: #B8BDC5; height: 400px;">
                   <div class="col d-flex justify-content-between">
                       <div class="col-3" style="color: #8f9297; ">Price</div>
                       <div class="col-5 text-end" style="color: #8f9297; "> Amount</div>
-                      <!-- <div class="col-4 text-end" style="font-size: 10px;">Total</div> -->
                       
                   </div>
                  <div class="col d-flex justify-content-between">
                   <div class="col-3 text-danger">11111.00</div>
                   <div class="col-5 text-end" >0000.99</div>
-                  <!-- <div class="col-4 text-end" style="font-size: 10px;">99.67</div> -->
                  </div>
               </div>
                 </div>
@@ -969,7 +970,7 @@
                         <div class="text">Original</div>
                         <div class="text">Trading view</div>
                         <div class="text">Depth</div>
-                        <div><i class="fa-solid fa-arrow-right-arrow-left cursor"></i></div>
+                        <div><i class="bi bi-arrows-angle-expand"></i></div>
                         <div><i class="fa-regular fa-boxes-stacked cursor"></i></div>
            
                     </div>
@@ -1103,19 +1104,21 @@
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-buy" role="tabpanel" aria-labelledby="pills-buy-tab">
                 <!-- usdt buy sell-->
-                  <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                <div class="d-flex justify-content-between align-items-center">
+                  <ul class="nav nav-pills align-items-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link active selected-limit" id="pills-md-buy-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-limit" type="button" role="tab" aria-controls="pills-md-buy-limit" aria-selected="true">Limit</button>
+                      <button class="nav-link active selected-limit p-2" id="pills-md-buy-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-limit" type="button" role="tab" aria-controls="pills-md-buy-limit" aria-selected="true">Limit</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link selected-limit" id="pills-md-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-market" type="button" role="tab" aria-controls="pills-md-buy-market" aria-selected="false">Market</button>
+                      <button class="nav-link selected-limit p-2" id="pills-md-buy-market-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-market" type="button" role="tab" aria-controls="pills-md-buy-market" aria-selected="false">Market</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                      <button class="nav-link selected-limit" id="pills-md-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-stop-limit" type="button" role="tab" aria-controls="pills-md-buy-stop-limit" aria-selected="false">Stop-limit</button>
+                      <button class="nav-link selected-limit p-2" id="pills-md-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-md-buy-stop-limit" type="button" role="tab" aria-controls="pills-md-buy-stop-limit" aria-selected="false">Stop-limit</button>
                     </li>
-                    <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
-                    <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
+                    <li class="nav-item">   <i class="fa-solid fa-caret-down text-secondary font-size" ></i></li>
                   </ul>
+                  <i class="fa-solid fa-circle-info text-secondary info font-size" ></i>
+              </div>
 
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-md-buy-limit" role="tabpanel" aria-labelledby="pills-md-buy-limit-tab">
@@ -1563,8 +1566,13 @@
                         </li>
                         <li class="nav-item" role="presentation">
                           <button class="nav-link selected-limit" id="pills-xs-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-buy-stop-limit" aria-selected="false">Stop-limit</button>
+                          <!-- <select class="nav-link selected-limit " aria-label="Default select example" id="pills-xs-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-buy-stop-limit" aria-selected="false">
+                            <option selected>working Stop-limit</option>
+                            <option value="1">Trailing Stop</option>
+                            <option value="2">OCO</option>
+                          </select> -->
                         </li>
-                        <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li>
+                        <!-- <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li> -->
                         <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
                       </ul>
     
