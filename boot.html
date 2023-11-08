@@ -1530,10 +1530,35 @@
 
        <section class="d-block d-md-none d-lg-none bg-dark ">
 
-        <div class="row px-3 py-2 gap-2 m-0 fixed-bottom bg-dark">
+        <div class="fixed-bottom">
+        <div class="row px-3 py-3 gap-2 m-0  bg-dark">
           <button class="col py-2 nav-link text-light rounded " style="background-color: rgb(14, 203, 129);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Buy</button>
         <button class="col py-2 nav-link text-light rounded" style="background-color: rgb(246, 70, 93);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Sell</button>
         </div>
+        <footer class="container-fluid d-flex justify-content-between align-items-center bg-black">
+          <a><i class="bi bi-arrow-left-right"></i></a>
+         
+            <!-- <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between">
+              <li class="nav-item active ">
+                <a href="#" class="nav-link footer-font-size "><i class="fas fa-bell font-size"></i> Announcements</a>
+              </li>
+              <li class="nav-item p-2">
+                <a href="#" class="nav-link footer-font-size "><i class="fas fa-cog font-size "></i> Cookie Preferences</a>
+              </li>
+            </ul> -->
+            <div class="d-flex">
+              <button class="d-flex ">
+                <i class="fas fa-bell font-size me-2"></i> 
+                <span class="nav-link footer-font-size ">Announcements</span>
+              </button>
+              <button class="d-flex">
+                <i class="fas fa-cog font-size "></i>
+                <span class="nav-link footer-font-size "> Cookie Preferences</span>
+              </button>
+            </div>
+        
+        </footer>
+      </div>
 
         <div class="offcanvas offcanvas-bottom bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <div class="offcanvas-header">
@@ -1566,11 +1591,6 @@
                         </li>
                         <li class="nav-item" role="presentation">
                           <button class="nav-link selected-limit" id="pills-xs-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-buy-stop-limit" aria-selected="false">Stop-limit</button>
-                          <!-- <select class="nav-link selected-limit " aria-label="Default select example" id="pills-xs-buy-stop-limit-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy-stop-limit" type="button" role="tab" aria-controls="pills-xs-buy-stop-limit" aria-selected="false">
-                            <option selected>working Stop-limit</option>
-                            <option value="1">Trailing Stop</option>
-                            <option value="2">OCO</option>
-                          </select> -->
                         </li>
                         <!-- <li class="nav-item"><i class="fa-solid fa-caret-down text-secondary" ></i></li> -->
                         <li class="nav-item ps-3 "><i class="fa-solid fa-circle-info text-secondary info" ></i></li>
@@ -1768,8 +1788,19 @@
             </div>
           </div>
         </div>
+        
        </section>
-       
+    
+    <!-- <footer class="fixed-bottom">
+      <a><i class="bi bi-arrow-left-right"></i></a>
+      <div class="row col-sm-12 m-0 align-items-center ">
+        <a href="#" class="col col-xl-2 p-0 text-center" style="border-right: 1px solid #7b7d80;"><i class="fas fa-rss-square px-2"></i> Feed</a>
+        <a href="#" class="col p-0 text-center" style="border-right: 1px solid #7b7d80;"><i class="fas fa-bell px-2"></i> Announcements</a>
+        <a href="#" class=" col col-md-3 p-0 text-center" style="border-right: 1px solid #7b7d80;"><i class="fas fa-cog px-2"></i> Cookie Preferences</a>
+        <a href="#" class=" col p-0 text-center" style="border-right: 1px solid #7b7d80;"><i class="fas fa-download px-2"></i> Download</a>
+        <a href="#" class=" col p-0 text-center"><i class="fa-solid fa-message px-2" ></i>online support</a>
+    </div>
+    </footer> -->
     
 </body>
 <!-- <script>
