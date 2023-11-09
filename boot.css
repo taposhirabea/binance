@@ -345,6 +345,30 @@ a {
     border-radius: 10px;
   }
   
-.footer-font-size  {
-    font-size: 13px;
+.footer-font-size li a {
+    font-size: 12px;
 }
+.footer-font-size li a:hover {
+    color: #d6a511 !important;
+}
+/* .footer-prblm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.carousel-inner {
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    display: none;
+    animation: slideRightToLeft 10s linear infinite;
+  }
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
