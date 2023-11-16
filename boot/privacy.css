@@ -1,0 +1,10 @@
+.list1 {
+    color: #6e6a6a;
+    padding-left: 50px;
+    gap: 8px;
+    display: grid;
+    grid-template-rows: auto;
+}
+.list1 li {
+    list-style: none;
+}
