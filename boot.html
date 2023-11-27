@@ -17,8 +17,8 @@
 
 </head>
 <body>
-    <header style="border-bottom: 1px solid #2B3038;">
-    <nav class="navbar navbar-expand-lg bg-black py-0">
+    <header class="">
+    <nav class="navbar navbar-expand-lg  py-0">
         <div class="container-fluid ps-4">
           <a class="navbar-brand mx-0 py-0" href="#">
             <img src="images/logo.png" class=" logo-img" alt=""/>
@@ -31,18 +31,18 @@
           <div data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" >
             
               <button class="btn d-lg-none px-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list text-light fs-2"></i>
+                <i class="bi bi-list fs-2"></i>
             </button>
           </div>
           <button class="btn d-lg-none px-0" type="button" href="#">
-            <i class="bi bi-gear text-light fs-5"></i>
+            <i class="bi bi-gear fs-5"></i>
           </button>
         </div>
           
           <div class="collapse navbar-collapse justify-content-between px-3" id="navbarNavDropdown">
-            <ul class="navbar-nav header-navlist">
+            <ul class="navbar-nav header-navlist fw-bolder">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">buy crypto</a>
+                <a class="nav-link" aria-current="page" href="#">buy crypto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">markets</a>
@@ -89,11 +89,11 @@
 
  <!-- ........login register button.......  -->
             <div class="navbar-nav" style="overflow: hidden;">
-                <button class="col bg-transparent text-light mx-2 text sign-btn log-in">Log In</button>
-                <button class="col text-dark rounded m-2 sign-btn px-2 " style=" background-color: #FCD535;">Register</button>
+                <button class="col bg-transparent mx-2 log-in">Log In</button>
+                <button class="col text-dark rounded m-2 sign-btn px-2 " style="border: none; background-color: #FCD535;">Register</button>
                 <ul class="col navbar-nav gap-1 login" >
                     <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link active" aria-current="page" href="#">
+                        <a class="nav-link " aria-current="page" href="#">
                             <i class="fa-solid fa-bell"></i>
                         </a>
                     </li>
@@ -118,9 +118,9 @@
                         </a>
                     </li>
                     <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link" href="#">
+                        <button class="nav-link "  id="toggleMode">
                             <i class="bi bi-gear fs-5"></i>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -131,11 +131,11 @@
       <section class=" d-none d-sm-block "></section>
 
       
-      <nav class="navbar navbar-expand-lg bg-dark second-nav" >
+      <nav class="navbar navbar-expand-lg  second-nav" >
   <div class="container-fluid">
     <div class=" collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
       <div class="navbar-nav ps-3 gap-4 second-line">
-        <a class="nav-link active" aria-current="page" href="#">Notice of Removal of Margin Tra...&nbsp;<span>(09-29)</span></a>
+        <a class="nav-link" aria-current="page" href="#">Notice of Removal of Margin Tra...&nbsp;<span>(09-29)</span></a>
         <a class="nav-link" href="#">Get 1 USDT When Spending $10 on MooGol...&nbsp;<span>(09-29)</span></a>
         <a class="nav-link" href="#">Refer Friends to Binance Fan Token to Share $40...!&nbsp;<span>(09-28)</span></a>
     </div>
@@ -151,13 +151,13 @@
 
     <main class="">
         <section class="d-block d-sm-block d-md-block d-lg-none" >
-            <section class="container-fluid bg-dark py-1">
+            <section class="container-fluid py-1">
               <!-- d-sm d-md btc price -->
                 <div class="row ">
                     <div class="col-5 col-sm-6 col-md-3 row mx-0 px-0 align-items-center">
                         <!-- <div class=""> -->
-                          <div class=" row mx-0 pe-0 col-sm-7 col-md-7 bitcoin-price ">
-                            <div class="row fs-7 text-light pe-0 col ">BTC<span class="ps-0">/USDT</span></div>
+                          <div class=" row mx-0 pe-0 col-sm-7 col-md-7 ">
+                            <div class="row fs-7 pe-0 col ">BTC<span class="ps-0">/USDT</span></div>
                             <div class="col col-md-7 px-0 d-flex">
                               <i class="bi bi-caret-down-fill d-md-none text-secondary basic-style"></i>
                               
@@ -180,21 +180,21 @@
                       </div>
                       <div class="col-12 col-sm-6 py-2 px-0 col-md-2 row ">
                           <span class="basic-style py-2 pe-0">24h High</span>
-                          <span class="text-light basic-style">19,695.00</span>
+                          <span class="basic-style-num">19,695.00</span>
                       </div>
                       <div class="col-12 col-sm-6 py-2 px-0 col-md-2 row">
                           <span class="basic-style py-2 pe-0">24h Low</span>
-                          <span class="text-light basic-style">19,070.11</span>
+                          <span class="basic-style-num">19,070.11</span>
                       </div>
                       <div class="col-12 col-sm-6 px-0 col-md-3 row">
                           <span class="basic-style pe-0 pb-2 d-md-none">24h Volume (BTC)</span>
                           <span class="basic-style py-2 d-none d-md-block">24h Volume(BTC)</span>
-                          <span class="text-light basic-style">234,555,92</span>
+                          <span class=" basic-style-num">234,555,92</span>
                       </div>
                       <div class="col-12 col-sm-6 px-0 col-md-3 row">
                           <span class="basic-style pe-0 pb-2 d-md-none">24h Volume (USDT)</span>
                           <span class="basic-style py-2 d-none d-md-block">24h Volume(USDT)</span>
-                          <span class="text-light basic-style">4,548,807.18</span>
+                          <span class=" basic-style-num">4,548,807.18</span>
                       </div>
                   
                       <button type="button" class="count-range justify-content-end d-none d-md-block" onclick="slide(1)"><i class="bi bi-chevron-right"></i></button>
@@ -213,19 +213,19 @@
         </section>
 
         <!-- d-lg left sidebar, middle chart, right sidebar-->
-        <section class="d-none d-lg-block bg-dark text-light">
+        <section class="d-none d-lg-block ">
            <!-- .........left side section 1st part......... -->
            
-           <article class="row m-0">     
+           <article class="row m-0 header-border">     
             <section class="col-9 ">
               <!-- working on it-->
-              <section class="container-fluid bg-dark">
+              <section class="container-fluid">
                 <!-- d-lg btc price -->
                   <div class="row ">
                       <div class="col-4 row mx-0 px-0 align-items-center">
                           <!-- <div class=""> -->
-                            <div class=" col-md-8 bitcoin-price pe-0">
-                              <div class="fs-7 text-light pe-0 ">BTC/USDT <a href="#" class=" text-secondary basic-style pe-2">Bitcoin Price</a></div>
+                            <div class=" col-md-8 pe-0">
+                              <div class="fs-7 pe-0 ">BTC/USDT <a href="#" class=" text-secondary basic-style pe-2">Bitcoin Price</a></div>
                               <button class="pow-btn d-flex gap-1 align-items-center">POW <div class="line" style="height: 3px;"></div> Vol <i class="fa-solid fa-greater-than text-warning" style="font-size: 6px;"></i></button>
                        
                             </div>
@@ -245,16 +245,16 @@
                         </div>
                         <div class="col row pe-0">
                             <span class="basic-style py-2 pe-0">24h High</span>
-                            <span class="text-light basic-style pe-0">19,695.00</span>
+                            <span class=" basic-style-num pe-0">19,695.00</span>
                         </div>
                         <div class="col py-2 px-0 row">
                             <span class="basic-style py-2 pe-0">24h Low</span>
-                            <span class="text-light basic-style">19,070.11</span>
+                            <span class=" basic-style-num">19,070.11</span>
                         </div>
                         <div class="col py-2 px-0 row">
                             <span class="basic-style py-2 d-md-none">24h Volume (BTC)</span>
                             <span class="basic-style py-2 d-none d-md-block">24h Volume(BTC)</span>
-                            <span class="text-light basic-style">234,555,92</span>
+                            <span class=" basic-style-num">234,555,92</span>
                         </div>
                         <!-- <div class="col-7 col-sm-6 py-2 px-0 col-md-4 row">
                             <span class="basic-style py-2 d-md-none">24h Volume (USDT)</span>
@@ -274,7 +274,7 @@
     
               </section>
               <div class="row">
-                <div class="col-4 p-3" style="border-right: 1px solid #2b3038; border-top: 1px solid #2A2D35;">
+                <div class="col-4 p-3 lg-middle-border">
                   <div class="d-flex justify-content-between">
                       <div class="mx-1">
                           <img src="images/Volume layount icon.png"/>
@@ -286,49 +286,47 @@
                           <i class="fa-solid fa-ellipsis-vertical"></i>
                       </div>
                   </div>
-                  <div class="py-2" style="font-size: 12px; color: #B8BDC5; height: 400px;">
+                  <div class="py-2" style="font-size: 12px; color: #868E9B; height: 400px;">
                       <div class="col d-flex">
                           <div class="col-3">Price(USDT)</div>
-                          <div class="col-5 text-end" style="color: #B8BDC5; font-size: 10px;"> Amount(BTC)</div>
-                          <div class="col-4 text-end" style="font-size: 10px;">Total</div>
+                          <div class="col-5 text-end" style="color: #868E9B; font-size: 12px;"> Amount(BTC)</div>
+                          <div class="col-4 text-end" style="font-size: 12px;">Total</div>
                           
                       </div>
                      <div class="col d-flex">
                       <div class="col-3 text-danger">11111.00</div>
-                      <div class="col-5 text-end" style="color: #B8BDC5; font-size: 10px;">0000.99</div>
+                      <div class="col-5 text-end" style="color: #868E9B; font-size: 10px;">0000.99</div>
                       <div class="col-4 text-end" style="font-size: 10px;">99.67</div>
                      </div>
                   </div>
   
                   <!-- .........left side section 2nd part......... -->
-                  <div class="col " style="color: #B8BDC5; height: 380px;">
+                  <div class="col " style="color: #868E9B; height: 380px;">
                       <div class="col d-flex align-items-center " >
-                          <div class="col-3 " style="color: #5DC787;">27,559.18</div>
+                          <div class="col-3 fw-normal" style="color: #2DB485;">27,559.18</div>
                           <div class="col-4 px-4" style="font-size: 12px;">$27,559.18</div>
-                          <div class="col-5 text-end"><a href="#" class=" text-decoration-none" style="font-size: 10px; color: #B8BDC5;">More</a></div>
+                          <div class="col-5 text-end"><a href="#" class=" text-decoration-none" style="font-size: 12px; color: #868E9B;">More</a></div>
                           <!-- <div style="font-size: 10px;">27,559.18</div> -->
                       </div>
                       
                       <div class="col d-flex ">
-                          <div class="col-3" style=" font-size: 10px; color: #5DC787;">27,559.18</div>
+                          <div class="col-3 fw-normal" style=" font-size: 10px; color: #2DB485;">27,559.18</div>
                           <div class="col-5 text-end" style="font-size: 10px;">0.00100</div>
                           <div class="col-4 text-end" style="font-size: 10px;">27,559.18</div>
                       </div>
                   </div>
   
                   <!-- .........left side section last part......... -->
-                  <div class="col d-flex  text-light py-2">
-                      <div class=" col-6 d-flex gap-2 px-1 py-1" style="background: #112922;">
-                          <div class="px-1" style="font-size: 10px; background: #171B1F;">B</div>
-                          <div style="font-size: 10px;">2.15%</div>
+                  <div class="col d-flex py-2">
+                      <div class=" col-6 d-flex gap-2  py-1 range-b" >
+                            <span class="px-1">B</span>2.15%
                       </div>
-                      <div class=" col-6 d-flex gap-2 justify-content-end px-1 py-1" style="background: #35161E;">
-                          <div style="font-size: 10px;">50.00%</div>
-                          <div class="px-1 " style="font-size: 10px; background: #171B1F;">S</div>
+                      <div class=" col-6 d-flex gap-2 justify-content-end py-1 range-s" >
+                          50.00% <span class="px-1">S</span>
                       </div>
                   </div>
               </div>
-              <div class="col-8 p-0" style="background: #1E2026; border-top: 1px solid #2A2D35;">
+              <div class="col-8 p-0 chart-border">
                 <div style="height: 500px;">
                   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -373,9 +371,9 @@
              
   
               <!-- ..........d-xl bottom of middle chart......... -->
-              <div class="text-light" style="border-bottom: 1px solid #2b3038; background: #161A1E;">
+              <div >
    
-                  <div class="text-light">
+                  <div class="">
                     <ul class=" nav nav-pills" id="pills-tab" role="tablist">
                       <li class="nav-item " role="presentation">
                         <button class="px-4 nav-link active spot-except-border" id="pills-lg-spot-tab" data-bs-toggle="pill" data-bs-target="#pills-lg-spot" type="button" role="tab" aria-controls="pills-lg-spot" aria-selected="true">Spot</button>
@@ -410,27 +408,27 @@
                         <div class="tab-content" id="pills-tabContent">
                           <div class="tab-pane fade show active" id="pills-lg-limit" role="tabpanel" aria-labelledby="pills-lg-limit-tab">
                             <!-- Start limit details -->
-                              <div class="row m-0 pb-4">
+                              <div class="row m-0 pb-4 ">
                                 <div class="col">
                                   <div class="pb-2">Avbl <span class="">-USDT</span></div>
                                 <form>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit">Price</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit ">USDT</span>
+                                    <span class="input-group-text limit text-secondary">Price</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text  limit dark-limit">USDT</span>
                                   </div>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit">Amount</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit">BTC</span>
+                                    <span class="input-group-text limit text-secondary">Amount</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text  limit dark-limit">BTC</span>
                                   </div>
                                   <input type="range" class="form-range" id="customRange1">
                                 </form>
-                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                  <button class="text-warning bg-transparent log-in">Log In</button>
-                                  <div class="text-light">or</div>
-                                  <button class="text-warning bg-transparent log-in">Register Now</button>
+                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                                  <button class="text-warning history">Log In</button>
+                                  <div class="or">or</div>
+                                  <button class="text-warning history">Register Now</button>
                               </div>
                              
                                 </div>
@@ -438,22 +436,22 @@
                                   <div class="pb-2">Avbl <span class="">-BTC</span></div>
                                   <form>
                                     <div class="input-group input-group-lg mb-3 input-value">
-                                      <span class="input-group-text limit">Price</span>
-                                      <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                      <span class="input-group-text text-light limit">USDT</span>
+                                      <span class="input-group-text limit text-secondary">Price</span>
+                                      <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                      <span class="input-group-text limit dark-limit">USDT</span>
                                     </div>
                                     <div class="input-group input-group-lg mb-3 input-value">
-                                      <span class="input-group-text limit">Amount</span>
-                                      <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                      <span class="input-group-text text-light limit">BTC</span>
+                                      <span class="input-group-text limit text-secondary">Amount</span>
+                                      <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                      <span class="input-group-text limit dark-limit">BTC</span>
                                     </div>
                                     <input type="range" class="form-range" id="customRange1">
                                   </form>
-                                  <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                                  <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                    <button class="text-warning bg-transparent log-in">Log In</button>
-                                    <div class="text-light">or</div>
-                                    <button class="text-warning  bg-transparent log-in">Register Now</button>
+                                  <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                                  <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg" >
+                                    <button class="text-warning history">Log In</button>
+                                    <div class="or">or</div>
+                                    <button class="text-warning history">Register Now</button>
                                 </div>
                                 </div>
                               </div>
@@ -582,17 +580,17 @@
               </div>
           </section>
           <!-- working on it -->
-            <section class="col-3 py-2 px-0">
+            <section class="col-3 py-2 px-0 search-border">
               <div class="p-2">
-                <div class="input-group align-items-center rounded py-1 px-2" style="background: #4e525f;">
+                <div class="input-group align-items-center rounded py-1 px-2 input-bg">
                   <div class="input-group-prepend">
-                    <i class="fas fa-search text-secondary rounded" ></i>
+                    <i class="fas fa-search rounded" style="color: #516271;"></i>
                   </div>
-                  <input type="search" class="form-control rounded text-light" style="border: none; height: 25px; background: #4e525f; font-size: 13px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                  <input type="search" class="form-control rounded " style="border: none; height: 25px; font-size: 13px;" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
                 </div>
               </div>
 
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="font-size: 12px;">
+              <ul class="nav nav-pills mb-3 fw-bolder " id="pills-tab" role="tablist" style="font-size: 12px;">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link px-2" id="pills-USDT-tab" data-bs-toggle="pill" data-bs-target="#pills-USDT" type="button" role="tab" aria-controls="pills-USDT" aria-selected="false">USDT</button>
                 </li>
@@ -647,9 +645,9 @@
                   <div class="scroll-container" >
                     <div class="col d-flex py-1 px-3">
                         <div class="col-3 d-flex gap-1" style="font-size: 11px;">
-                            <i class="fa-solid fa-star"></i>
-                            <div class="text-uppercase text-light" >
-                                XMR<span class="text-secondary" >/BTC</span>
+                            <i class="fa-solid fa-star" style="color: #848E9C;"></i>
+                            <div  class="text-uppercase fw-bolder">
+                                XMR<span style="color: #848E9C;" >/BTC</span>
                             </div>
                             <div class=" text-warning" style="background: rgba(192, 118, 14, 0.233);">
                                 10x
@@ -665,8 +663,8 @@
                 <div class="tab-pane fade" id="pills-BTC" role="tabpanel" aria-labelledby="pills-BTC-tab" tabindex="0">BTC</div>
               </div>
 
-              <section>
-                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+              <section class="market-border">
+                <ul class="nav nav-pills fw-3" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button class="nav-link active " id="pills-market-trades-tab" data-bs-toggle="pill" data-bs-target="#pills-market-trades" type="button" role="tab" aria-controls="pills-market-trades" aria-selected="true">Market Trades</button>
                   </li>
@@ -674,21 +672,21 @@
                     <button class="nav-link" id="pills-my-trades-tab" data-bs-toggle="pill" data-bs-target="#pills-my-trades" type="button" role="tab" aria-controls="pills-my-trades" aria-selected="false">My Trades</button>
                   </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent" style="height: 305px; border-bottom: 1px solid #2A2D35;">
+                <div class="tab-content " id="pills-tabContent" style="height: 305px; ">
                   <div class="tab-pane fade show active" id="pills-market-trades" role="tabpanel" aria-labelledby="pills-market-trades-tab" tabindex="0">
-                    <div style="border-top: 1px solid #2A2D35;">
+                    <div >
                     
                       <div class="p-3 text-secondary"  style="font-size: 12px; ">
                           <div class="col d-flex">
                               <div class="col-3">Price(USDT)</div>
-                              <div class="col-5 text-end" style="font-size: 10px;">Amount(BTC)</div>
-                              <div class="col-4 text-end text-secondary" style="font-size: 10px;">Time</div>
+                              <div class="col-5 text-end" style="font-size: 12px;">Amount(BTC)</div>
+                              <div class="col-4 text-end text-secondary" style="font-size: 12px;">Time</div>
                           </div>
                           <div class="scroll-container" >
                               <div class="col d-flex">
                                   <div class="col-3 text-danger">11111.00</div>
-                                  <div class="col-5 text-end " style="color: #B8BDC5; font-size: 10px;">0000.99</div>
-                                  <div class="col-4 text-end" style="color: #B8BDC5; font-size: 10px;">99.67</div>
+                                  <div class="col-5 text-end " style="color: #B8BDC5; font-size: 12px;">0000.99</div>
+                                  <div class="col-4 text-end" style="color: #B8BDC5; font-size: 12px;">99.67</div>
                               </div>
                               
                           </div>
@@ -707,9 +705,9 @@
               <section>
                 <div class="p-3" >
                   <div class="d-flex  align-items-center justify-content-between">
-                      <div class="d-flex align-items-center gap-1">
-                          <div class=" text-light">Top Movers</div>
-                          <a class=" text-warning text-decoration-none">FAQ></a>
+                      <div class="d-flex align-items-center gap-1 fw-bolder">
+                          <div >Top Movers</div>
+                          <a class=" text-warning text-decoration-none " style="font-size: small;">FAQ></a>
                       </div>
                       <a href="#"><i class="fa-solid fa-chevron-up text-secondary" style="font-size: 10px;"></i></a>
                   </div>
@@ -734,19 +732,19 @@
                       </ul>
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                          <div>
-                            <a href="#" class="row m-0 align-items-center text-decoration-none">
-                              <div class="col p-0">
+                          <div class="">
+                            <a href="#" class="row m-0 align-items-center text-decoration-none ">
+                              <div class="col p-0 ">
 
-                                <div class="text-uppercase font-size">creame<span>/usdt</span></div>
-                                <div class="font-size">16:12:41</div>
+                                <div class="text-uppercase font-size all-top">creame<span style="color: #848E9C;">/usdt</span></div>
+                                <div class="font-size" style="color: #848E9C;">16:12:41</div>
                               </div>
                               <div class="col p-0 text-end">
-                                <div class="font-size">+3.13%</div>
-                                <div class="text-uppercase text-secondary" style="font-size: 10px;">[small] 5min rise</div>
+                                <div class="font-size text-success">+3.13%</div>
+                                <div class="text-uppercase all-top" style="font-size: 10px;">[small] 5min rise</div>
                               </div>
                               <div class="col p-0 text-end">
-                                <button class="px-3 rounded" style="background: #0ecb8361; color: #0ECB81;">
+                                <button class="px-3 rounded" style="background: #0ecb8361; color: #0ECB81; border: none">
                                   <i class="fa-solid fa-arrow-right-long"></i>
                               </button>
                               </div>
@@ -895,8 +893,8 @@
 
         <!-- d-xs, d-sm, d-lg+ open orders-->
         <section class="d-md-none d-lg-block">
-          <div class=" p-3" style="background-color: #161A1E;">
-            <ul class="nav nav-pills mb-3 open-orders-tabs gap-2" id="pills-tab" role="tablist">
+          <div class=" p-3" >
+            <ul class="nav nav-pills mb-3 open-orders-tabs gap-2 fw-bolder" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link text-secondary history active" id="pills-open-orders-tab" data-bs-toggle="pill" data-bs-target="#pills-open-orders" type="button" role="tab" aria-controls="pills-open-orders" aria-selected="true">Open Orders(0)</button>
                 </li>
@@ -911,9 +909,9 @@
                 </li>
               </ul>
         </div>
-        <div class="d-flex align-items-center justify-content-center" style="height: 15rem; background-color: #161A1E;">
+        <div class="d-flex align-items-center justify-content-center" style="height: 15rem;">
             <div class="text-warning px-4 py-4 h-4">
-                <div>Log In <span class="text-light">or</span> Register Now <span class="text-light">to trade</span></div>
+                <div>Log In <span class="or">or</span> Register Now <span class="or">to trade</span></div>
             </div>
         </div>
   
@@ -925,7 +923,7 @@
             
           <div class="col-md-8">
             
-            <div class="row" style="border-bottom: 1px solid #2A2D35;">
+            <div class="row" style="border-bottom: 1px solid #35302a;">
 
             <div class="d-none d-md-block d-lg-none" style="height: 500px;">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="border-bottom: 1px solid rgb(72, 71, 71);">
@@ -1765,22 +1763,22 @@
        </section>
 
     <section class="d-none d-sm-none d-md-block">
-      <footer class="container-fluid fixed-bottom bg-dark d-flex justify-content-between">
-        <div class="align-items-center d-flex text-light">
+      <footer class="container-fluid fixed-bottom footer-bg d-flex justify-content-between">
+        <div class="align-items-center d-flex ">
           <i class="fas fa-wifi"></i>
-          <span class="px-2" style="font-size: 12px;">Disconnected</span>
+          <span class="px-2" style="font-size: 12px;">Connected</span>
         </div>
 
-        <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between align-items-center gap-2 footer-font-size">
+        <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between align-items-center gap-2 footer-font-size footer-support">
           <div class="d-none d-lg-block ">
             <div class="d-flex " style="align-items: center !important;">
-              <a href="#" class="" ><i class="fas fa-sliders-h px-1"></i></a>
+              <a href="#" class="" ><i class="fas fa-sliders-h px-1 text-secondary"></i></a>
               <div id="carouselExampleSlidesOnly " class="carousel slide" style="padding-right: 0; overflow: hidden; width: 100%;" data-ride="carousel">
                 <div class="carousel-inner " >
                   <div class="carousel-item active ">
-                    <div class="d-flex gap-3 text-warning ">
-                        <div class=" text-uppercase font-size">NULSBUSD</div>
-                        <div class="font-size">+0.18</div>
+                    <div class="d-flex gap-3 text-secondary fw-bolder">
+                        <div class=" text-uppercase font-size ">NULSBUSD</div>
+                        <div class="font-size text-danger">+0.18%</div>
                         <div class="font-size">0.3224</div>
                     </div>
                   </div>   
@@ -1837,6 +1835,17 @@
 
   </script>
 
+<script >
+  document.addEventListener("DOMContentLoaded", function () {
+const toggleModeButton = document.getElementById("toggleMode");
+const body = document.body;
+
+toggleModeButton.addEventListener("click", function () {
+  body.classList.toggle("dark-mode");
+});
+});
+
+</script>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mode.css">
+    <title>Dark/Light Mode</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <ul class="col navbar-nav gap-1 login" >
+            <li class="nav-item ">
+                <a class="nav-link " aria-current="page" href="#">
+                    ggggggg
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="#">
+                    wwwww
+                </a>
+            </li>
+           
+        </ul>
+        <button id="toggleMode">Toggle Mode</button>
+    </div>
+
+    <script >
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleModeButton = document.getElementById("toggleMode");
+    const body = document.body;
+
+    toggleModeButton.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+    });
+});
+
+    </script>
+</body>
+</html>
