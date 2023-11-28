@@ -83,10 +83,12 @@ body {
     background-color: #1E2026;
     border-left: 1px solid #2B313A;
     border-right: 1px solid #2B313A;
+    color: #fff;
 }
 .dark-mode .nav-item .nav-link.active.spot-except-border {
     background-color: #1E2026;
     border-right: 1px solid #2B313A;
+    color: #fff;
 }
 .header-border {
     border-top: 1px solid #EEF0F2;
@@ -124,9 +126,15 @@ body {
     border-top: 1px solid #2A2D35;
     border-bottom: 1px solid #2A2D35;
 }
-.footer-support li a {
+/* .footer-support li a {
     color: #516271;
+} */
+.footer-bgcolor {
+    color: #516271 !important;
 }
+/* .footer-bgcolor {
+    color: #333;
+} */
 ::placeholder {
     color: #516271 !important; /* Change this to the color you want */
   }
@@ -315,6 +323,7 @@ a {
     border-right: 1px solid #EAECEF;
     /* background-color: #292828; */
     background-color: #FFFFFF;
+    color: #333131;
 }
 .nav-item .nav-link.active.spot-except-border {
     border-left: none;
@@ -323,6 +332,7 @@ a {
     border-right: 1px solid #EAECEF;
     /* background-color: #292828; */
     background-color: #FFFFFF;
+    color: #333131;
 }
 .middle-last {
     background-color: #FFFFFF;
@@ -356,7 +366,8 @@ a {
     /* font-weight: 600; */
     font-size: 15px !important;
 }
-.dark-mode .limit {
+.dark-mode .limit,
+.dark-mode .market {
     background-color: #2A2D35 !important;
     color: #6d737e;
 }
@@ -396,7 +407,7 @@ a {
     color: white !important;
 }
 .market {
-    background-color: #6D737E;
+    background-color: #F0F1F2;
     border: none;
     font-size: 15px !important;
 }
@@ -469,6 +480,16 @@ a {
     /* background: #292828 ; */
     padding: 0;
 }
+.offcanvas-body,
+.offcanvas-header {
+    padding: 0;
+}
+.offcanvas {
+    --bs-offcanvas-bg: #FAFAFA;
+}
+.dark-mode .offcanvas {
+    --bs-offcanvas-bg: rgb(45, 48, 52);
+}
 /* .toggle-lists .dropdown-item:hover{
     background: #6d737e67;
     color: #b7b9be !important;
@@ -494,6 +515,7 @@ a {
   
 .footer-font-size li a {
     font-size: 12px;
+    color: #516271;
 }
 .footer-font-size li a:hover {
     color: #d6a511 !important;

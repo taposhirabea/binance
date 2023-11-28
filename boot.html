@@ -18,7 +18,7 @@
 </head>
 <body>
     <header class="">
-    <nav class="navbar navbar-expand-lg  py-0">
+    <nav class="navbar navbar-expand-lg footer-bg  py-0">
         <div class="container-fluid ps-4">
           <a class="navbar-brand mx-0 py-0" href="#">
             <img src="images/logo.png" class=" logo-img" alt=""/>
@@ -30,13 +30,16 @@
           </div>
           <div data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" >
             
-              <button class="btn d-lg-none px-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="nav-link d-lg-none px-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="bi bi-list fs-2"></i>
             </button>
           </div>
-          <button class="btn d-lg-none px-0" type="button" href="#">
+          <button class="nav-link d-lg-none pe-2" type="button" href="#">
             <i class="bi bi-gear fs-5"></i>
           </button>
+            <button class="nav-link d-flex align-items-center"  id="toggleMode">
+              <i class="fa-regular fa-moon fs-5"></i>
+            </button>
         </div>
           
           <div class="collapse navbar-collapse justify-content-between px-3" id="navbarNavDropdown">
@@ -293,10 +296,10 @@
                           <div class="col-4 text-end" style="font-size: 12px;">Total</div>
                           
                       </div>
-                     <div class="col d-flex">
+                     <div class="col d-flex fw-bolder">
                       <div class="col-3 text-danger">11111.00</div>
-                      <div class="col-5 text-end" style="color: #868E9B; font-size: 10px;">0000.99</div>
-                      <div class="col-4 text-end" style="font-size: 10px;">99.67</div>
+                      <div class="col-5 text-end" style="color: #5E6673; font-size: 12px;">0010.99</div>
+                      <div class="col-4 text-end" style="color: #5E6673; font-size: 12px;">929.67</div>
                      </div>
                   </div>
   
@@ -309,20 +312,20 @@
                           <!-- <div style="font-size: 10px;">27,559.18</div> -->
                       </div>
                       
-                      <div class="col d-flex ">
-                          <div class="col-3 fw-normal" style=" font-size: 10px; color: #2DB485;">27,559.18</div>
-                          <div class="col-5 text-end" style="font-size: 10px;">0.00100</div>
-                          <div class="col-4 text-end" style="font-size: 10px;">27,559.18</div>
+                      <div class="col d-flex fw-bolder">
+                          <div class="col-3" style=" font-size: 10px; color: #2DB485;">27,559.18</div>
+                          <div class="col-5 text-end" style="font-size: 12px; color: #5E6673;">0.00100</div>
+                          <div class="col-4 text-end" style="font-size: 12px; color: #5E6673;">27,559.18</div>
                       </div>
                   </div>
   
                   <!-- .........left side section last part......... -->
                   <div class="col d-flex py-2">
                       <div class=" col-6 d-flex gap-2  py-1 range-b" >
-                            <span class="px-1">B</span>2.15%
+                            <span class="px-1">B</span>4.55%
                       </div>
                       <div class=" col-6 d-flex gap-2 justify-content-end py-1 range-s" >
-                          50.00% <span class="px-1">S</span>
+                          60.00% <span class="px-1">S</span>
                       </div>
                   </div>
               </div>
@@ -463,22 +466,22 @@
                                 <div class="pb-2">Avbl <span class="">-USDT</span></div>
                               <form>
                                 <div class="input-group input-group-lg mb-3 market-value ">
-                                  <span class="input-group-text market ">Price</span>
-                                  <span class="form-control text-light text-end market pe-1 " >Market</span>
-                                  <span class="input-group-text text-light market ">USDT</span>
+                                  <span class="input-group-text market text-secondary">Price</span>
+                                  <span class="form-control  text-end market pe-1 dark-limit" >Market</span>
+                                  <span class="input-group-text  market dark-limit">USDT</span>
                                 </div>
                                 <div class="input-group input-group-lg mb-3 input-value">
-                                  <span class="input-group-text limit text-light" >Total</span>
-                                  <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                  <span class="input-group-text text-light limit">USDT</span>
+                                  <span class="input-group-text limit dark-limit" >Total</span>
+                                  <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                  <span class="input-group-text limit dark-limit">USDT</span>
                                 </div>
                                 <input type="range" class="form-range" id="customRange1">
                               </form>
-                              <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                              <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                <button class="text-warning bg-transparent log-in">Log In</button>
-                                <div class="text-light">or</div>
-                                <button class="text-warning bg-transparent log-in">Register Now</button>
+                              <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                              <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                                <button class="text-warning history">Log In</button>
+                                <div class="or">or</div>
+                                <button class="text-warning history">Register Now</button>
                             </div>
                            
                               </div>
@@ -486,22 +489,22 @@
                                 <div class="pb-2">Avbl <span class="">-BTC</span></div>
                                 <form>
                                   <div class="input-group input-group-lg mb-3 market-value ">
-                                    <span class="input-group-text market">Price</span>
-                                    <span class="form-control text-light text-end market pe-1 " >Market</span>
-                                    <span class="input-group-text text-light market ">USDT</span>
+                                    <span class="input-group-text market text-secondary">Price</span>
+                                    <span class="form-control text-end market pe-1 dark-limit" >Market</span>
+                                    <span class="input-group-text  market dark-limit">USDT</span>
                                   </div>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit text-light">Amount</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit">BTC</span>
+                                    <span class="input-group-text limit dark-limit">Amount</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text limit dark-limit">BTC</span>
                                   </div>
                                   <input type="range" class="form-range" id="customRange1">
                                 </form>
-                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                  <button class="text-warning bg-transparent log-in">Log In</button>
-                                  <div class="text-light">or</div>
-                                  <button class="text-warning  bg-transparent log-in">Register Now</button>
+                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                                  <button class="text-warning history">Log In</button>
+                                  <div class="or">or</div>
+                                  <button class="text-warning history">Register Now</button>
                               </div>
                               </div>
                             </div>
@@ -513,27 +516,27 @@
                                 <div class="pb-2">Avbl <span class="">-USDT</span></div>
                               <form>
                                 <div class="input-group input-group-lg mb-3 input-value">
-                                  <span class="input-group-text limit">Stop</span>
-                                  <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                  <span class="input-group-text text-light limit ">USDT</span>
+                                  <span class="input-group-text limit text-secondary">Stop</span>
+                                  <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                  <span class="input-group-text limit dark-limit">USDT</span>
                                 </div>
                                 <div class="input-group input-group-lg mb-3 input-value">
-                                  <span class="input-group-text limit">Limit</span>
-                                  <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                  <span class="input-group-text text-light limit ">USDT</span>
+                                  <span class="input-group-text limit text-secondary">Limit</span>
+                                  <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                  <span class="input-group-text limit dark-limit">USDT</span>
                                 </div>
                                 <div class="input-group input-group-lg mb-3 input-value">
-                                  <span class="input-group-text limit">Amount</span>
-                                  <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                  <span class="input-group-text text-light limit">BTC</span>
+                                  <span class="input-group-text limit text-secondary">Amount</span>
+                                  <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                  <span class="input-group-text limit dark-limit">BTC</span>
                                 </div>
                                 <input type="range" class="form-range" id="customRange1">
                               </form>
-                              <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                              <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                <button class="text-warning bg-transparent log-in">Log In</button>
-                                <div class="text-light">or</div>
-                                <button class="text-warning bg-transparent log-in">Register Now</button>
+                              <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                              <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                                <button class="text-warning history">Log In</button>
+                                <div class="or">or</div>
+                                <button class="text-warning history">Register Now</button>
                             </div>
                            
                               </div>
@@ -541,27 +544,27 @@
                                 <div class="pb-2">Avbl <span class="">-BTC</span></div>
                                 <form>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit">Stop</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit">USDT</span>
+                                    <span class="input-group-text limit text-secondary">Stop</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text limit dark-limit">USDT</span>
                                   </div>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit">Limit</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit">USDT</span>
+                                    <span class="input-group-text limit text-secondary">Limit</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text limit dark-limit">USDT</span>
                                   </div>
                                   <div class="input-group input-group-lg mb-3 input-value">
-                                    <span class="input-group-text limit">Amount</span>
-                                    <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                    <span class="input-group-text text-light limit">BTC</span>
+                                    <span class="input-group-text limit text-secondary">Amount</span>
+                                    <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text limit dark-limit">BTC</span>
                                   </div>
                                   <input type="range" class="form-range" id="customRange1">
                                 </form>
-                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                                  <button class="text-warning bg-transparent log-in">Log In</button>
+                                <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                                <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                                  <button class="text-warning history">Log In</button>
                                   <div class="text-light">or</div>
-                                  <button class="text-warning  bg-transparent log-in">Register Now</button>
+                                  <button class="text-warning history">Register Now</button>
                               </div>
                               </div>
                             </div>
@@ -653,8 +656,8 @@
                                 10x
                             </div>
                         </div>
-                        <div class="col-5 text-end " style="color: #14A971; font-size: 12px;">0000.99</div>
-                        <div class="col-4 text-end" style="color: #14A971; font-size: 12px;">+99.67%</div>
+                        <div class="col-5 text-end fw-bolder" style="color: #14A971; font-size: 12px;">01100.99</div>
+                        <div class="col-4 text-end fw-bolder" style="color: #14A971; font-size: 12px;">+99.627%</div>
                     </div>
                 </div>
                 </div>
@@ -676,17 +679,17 @@
                   <div class="tab-pane fade show active" id="pills-market-trades" role="tabpanel" aria-labelledby="pills-market-trades-tab" tabindex="0">
                     <div >
                     
-                      <div class="p-3 text-secondary"  style="font-size: 12px; ">
+                      <div class="p-3 text-secondary"  style="font-size: 12px;">
                           <div class="col d-flex">
                               <div class="col-3">Price(USDT)</div>
                               <div class="col-5 text-end" style="font-size: 12px;">Amount(BTC)</div>
                               <div class="col-4 text-end text-secondary" style="font-size: 12px;">Time</div>
                           </div>
                           <div class="scroll-container" >
-                              <div class="col d-flex">
+                              <div class="col d-flex fw-bolder">
                                   <div class="col-3 text-danger">11111.00</div>
-                                  <div class="col-5 text-end " style="color: #B8BDC5; font-size: 12px;">0000.99</div>
-                                  <div class="col-4 text-end" style="color: #B8BDC5; font-size: 12px;">99.67</div>
+                                  <div class="col-5 text-end " style="color: #5E6673; font-size: 12px;">0000.89</div>
+                                  <div class="col-4 text-end" style="color: #5E6673; font-size: 12px;">99.37</div>
                               </div>
                               
                           </div>
@@ -696,7 +699,7 @@
                   <div class="tab-pane fade" id="pills-my-trades" role="tabpanel" aria-labelledby="pills-my-trades-tab" tabindex="0">
                     <div class="d-flex align-items-center justify-content-center" style="height: 15rem;">
                       <div class="text-warning h-4">
-                          <div>Log In <span class="text-light">or</span> Register Now <span class="text-light">to trade</span></div>
+                          <div>Log In <span class="or">or</span> Register Now <span class="or">to trade</span></div>
                       </div>
                   </div>
                   </div>
@@ -766,7 +769,7 @@
         </section>
 
         <!-- d-xs d-sm chart, order book, trades-->
-        <section class="container-fluid bg-dark d-block d-sm-block d-md-none">
+        <section class="container-fluid d-block d-sm-block d-md-none">
           <div class="row" style="height: 500px;">
             <div class="col px-0">
               <ul class="nav nav-pills mb-3 chart-pills  " id="pills-tab" role="tablist">
@@ -785,7 +788,7 @@
               </ul>
 
               <!-- .........START xs & sm chart, order book & trades details........ -->
-              <div class="tab-content container-fluid text-light" id="pills-tabContent">
+              <div class="tab-content container-fluid " id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-xs-chart" role="tabpanel" aria-labelledby="chart">
                   <div class=" text-secondary d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #2b3038;">
                     <div class="d-flex gap-2" style="font-size: 12px;">
@@ -836,27 +839,27 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-6 py-2" style="font-size: 12px; color: #B8BDC5; height: 400px;">
+                  <div class="col-6 py-2" style="font-size: 12px; color: #5E6673; height: 400px;">
                     <div class="col d-flex justify-content-between">
                         <div class="col-3 " style="color: #8f9297; ">Amount</div>
 
                         <div class="col-5 text-end" style="color: #8f9297; ">Price </div>
                         
                     </div>
-                   <div class="col d-flex justify-content-between">
+                   <div class="col d-flex justify-content-between fw-bolder">
                     <div class="col-3" >11111.00</div>
-                    <div class="col-5 text-success text-end" >0000.99</div>
+                    <div class="col-5 text-success text-end" >0000.993</div>
                    </div>
                 </div>
-                <div class="col-6  py-2" style="font-size: 12px; color: #B8BDC5; height: 400px;">
+                <div class="col-6  py-2" style="font-size: 12px; color: #5E6673; height: 400px;">
                   <div class="col d-flex justify-content-between">
                       <div class="col-3" style="color: #8f9297; ">Price</div>
                       <div class="col-5 text-end" style="color: #8f9297; "> Amount</div>
                       
                   </div>
-                 <div class="col d-flex justify-content-between">
+                 <div class="col d-flex justify-content-between fw-bolder">
                   <div class="col-3 text-danger">11111.00</div>
-                  <div class="col-5 text-end" >0000.99</div>
+                  <div class="col-5 text-end" >0000.23</div>
                  </div>
               </div>
                 </div>
@@ -864,19 +867,19 @@
 
                 <!-- ......sm trades section....... -->
                 <div class=" tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="trades">
-                  <div class=" text-secondary"  style="font-size: 12px; ">
+                  <div class=""  style="font-size: 12px; color: #5E6673;">
                     <div class="col d-flex">
                         <div class="col-3">Price(USDT)</div>
-                        <div class="col-5 text-end" style="font-size: 10px;">Amount(BTC)</div>
-                        <div class="col-4 text-end text-secondary" style="font-size: 10px;">Time</div>
+                        <div class="col-5 text-end" style="font-size: 12px;">Amount(BTC)</div>
+                        <div class="col-4 text-end text-secondary" style="font-size: 12px;">Time</div>
                         
                     </div>
 
                     <div class="scroll-container">
-                        <div class="col d-flex">
+                        <div class="col d-flex fw-bolder">
                             <div class="col-3 text-danger">11111.00</div>
-                            <div class="col-5 text-end " style="color: #B8BDC5; font-size: 10px;">0000.99</div>
-                            <div class="col-4 text-end" style="color: #B8BDC5; font-size: 10px;">99.67</div>
+                            <div class="col-5 text-end " style=" font-size: 12px;">0000.45</div>
+                            <div class="col-4 text-end" style=" font-size: 12px;">99.67</div>
                         </div>
                     </div>
                 </div>
@@ -918,7 +921,7 @@
           </section>
         
           <!-- d-sm, d-md page -->
-        <section class="container-fluid  bg-dark d-none d-sm-block ">
+        <section class="container-fluid d-none d-sm-block ">
           <div class="row">
             
           <div class="col-md-8">
@@ -965,14 +968,14 @@
               <div class="d-none d-md-block  col-md-6 d-lg-none p-3 text-secondary"  style="font-size: 12px; ">
                   <div class="col d-flex">
                       <div class="col-3">Price(USDT)</div>
-                      <div class="col-5 text-end" style="font-size: 10px;">Amount(BTC)</div>
-                      <div class="col-4 text-end text-secondary" style="font-size: 10px;">Time</div>
+                      <div class="col-5 text-end" style="font-size: 12px;">Amount(BTC)</div>
+                      <div class="col-4 text-end text-secondary" style="font-size: 12px;">Time</div>
                   </div>
                   <div class="scroll-container">
-                      <div class="col d-flex">
+                      <div class="col d-flex fw-bolder">
                           <div class="col-3 text-danger">11111.00</div>
-                          <div class="col-5 text-end " style="color: #B8BDC5; font-size: 10px;">0000.99</div>
-                          <div class="col-4 text-end" style="color: #B8BDC5; font-size: 10px;">99.67</div>
+                          <div class="col-5 text-end " style="color: #5E6673; font-size: 12px;">0000.119</div>
+                          <div class="col-4 text-end" style="color: #5E6673; font-size: 12px;">99.67</div>
                       </div>
                   </div>
               </div>
@@ -989,44 +992,42 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </div>
-            <div class="py-2" style="font-size: 12px; color: #B8BDC5; "> <!---- height: 400px; -->
+            <div class="py-2" style="font-size: 12px; color: #5E6673; height: 130px;"> <!---- height: 400px; -->
                 <div class="col d-flex">
                     <div class="col-3">Price(USDT)</div>
-                    <div class="col-5 text-end" style="color: #B8BDC5; font-size: 10px;"> Amount(BTC)</div>
-                    <div class="col-4 text-end text-light" style="font-size: 10px;">Total</div>
+                    <div class="col-5 text-end" style="font-size: 12px;"> Amount(BTC)</div>
+                    <div class="col-4 text-end" style="font-size: 12px;">Total</div>
                     
                 </div>
-               <div class="col d-flex">
+               <div class="col d-flex fw-bolder">
                 <div class="col-3 text-danger">11111.00</div>
-                <div class="col-5 text-end" style="color: #B8BDC5; font-size: 10px;">0000.99</div>
-                <div class="col-4 text-end" style="font-size: 10px;">99.67</div>
+                <div class="col-5 text-end" style="color: #5E6673; font-size: 12px;">0000.9954</div>
+                <div class="col-4 text-end" style="color: #5E6673; font-size: 12px;">99.6723</div>
                </div>
             </div>
 
             <!-- .........left side section 2nd part......... -->
-            <div class="col " style="color: #B8BDC5; "> <!-- height: 300px; -->
+            <div class="col " style="color: #5E6673; height: 120px;"> <!-- height: 300px; -->
                 <div class="col d-flex align-items-center " >
                     <div class="col-3 " style="color: #5DC787;">27,559.18</div>
-                    <div class="col-4 px-4" style="font-size: 12px;">$27,559.18</div>
-                    <div class="col-5 text-end"><a href="#" class=" text-decoration-none" style="font-size: 10px; color: #B8BDC5;">More</a></div>
+                    <div class="col-4 px-4 text-secondary" style="font-size: 12px;">$27,559.18</div>
+                    <div class="col-5 text-end"><a href="#" class=" text-decoration-none" style="font-size: 12px; color: #5E6673;">More</a></div>
                     
                 </div>
-                <div class="col d-flex ">
-                    <div class="col-3" style=" font-size: 10px; color: #5DC787;">27,559.18</div>
-                    <div class="col-5 text-end" style="font-size: 10px;">0.00100</div>
-                    <div class="col-4 text-end" style="font-size: 10px;">27,559.18</div>
+                <div class="col d-flex fw-bolder">
+                    <div class="col-3" style=" font-size: 12px; color: #5DC787;">27,559.18</div>
+                    <div class="col-5 text-end" style="font-size: 12px;">0.00200</div>
+                    <div class="col-4 text-end" style="font-size: 12px;">27,559.18</div>
                 </div>
             </div>
 
             <!-- .........left side section last part......... -->
-            <div class="col d-flex  text-light py-2">
-                <div class=" col-6 d-flex gap-2 px-1 py-1" style="background: #112922;">
-                    <div class="px-1" style="font-size: 10px; background: #171B1F;">B</div>
-                    <div style="font-size: 10px;">2.15%</div>
+            <div class="col d-flex py-2">
+                <div class=" col-6 d-flex gap-2 px-1 py-1 range-b">
+                    <span class="px-1">B</span>2.15%
                 </div>
-                <div class=" col-6 d-flex gap-2 justify-content-end px-1 py-1" style="background: #35161E;">
-                    <div style="font-size: 10px;">50.00%</div>
-                    <div class="px-1 " style="font-size: 10px; background: #171B1F;">S</div>
+                <div class=" col-6 d-flex gap-2 justify-content-end px-1 py-1 range-s" >
+                    50.00%<span class="px-1">S</span>
                 </div>
             </div>
           </div>
@@ -1035,7 +1036,7 @@
          <!-- d-md open order-->
          <section class="d-none d-md-block d-lg-none">
          <section class="row">
-          <div class=" py-3" style="background-color: #161A1E;">
+          <div class=" py-3">
             <ul class="nav nav-tabs open-orders-tabs gap-2">
                 <li class="nav-item">
                   <a class="nav-link text-secondary active history" aria-current="page" href="#">Open Orders(0)</a>
@@ -1051,9 +1052,9 @@
                 </li>
               </ul>
         </div>
-        <div class="d-flex align-items-center justify-content-center" style="height: 15rem; background-color: #161A1E;">
+        <div class="d-flex align-items-center justify-content-center" style="height: 15rem;">
             <div class="text-warning px-4 py-4 h-4">
-                <div>Log In <span class="text-light">or</span> Register Now <span class="text-light">to trade</span></div>
+                <div>Log In <span class="or">or</span> Register Now <span class="or">to trade</span></div>
             </div>
         </div>
   
@@ -1064,18 +1065,18 @@
       
      
 
-      <article class="col-md-4 d-none d-md-block d-lg-none" style="background: #2B3038;">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="spot-tab" data-bs-toggle="tab" data-bs-target="#spot" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Spot</button>
-            <button class="nav-link" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cross 5x</button>
+      <article class="col-md-4 d-none d-md-block d-lg-none" >
+       
+          <div class="nav nav-item" id="nav-tab" role="tablist">
+            <button class="nav-link active spot-except-border" id="spot-tab" data-bs-toggle="tab" data-bs-target="#spot" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Spot</button>
+            <button class="nav-link spot-border" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cross 5x</button>
           </div>
-        </nav>
-        <div class="tab-content text-light" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="spot" role="tabpanel" aria-labelledby="spot-tab">
+        
+        <div class="tab-content middle-last p-3" id="nav-tabContent">
+          <div class="tab-pane fade show active " id="spot" role="tabpanel" aria-labelledby="spot-tab">
             <!--buy sell spot -->
 
-            <div class="nav nav-pills buy-sell-nav-pills mb-3 mt-3 " id="pills-tab" role="tablist">
+            <div class="nav nav-pills buy-sell-nav-pills " id="pills-tab" role="tablist">
               <button class="col nav-link active select-green" id="pills-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-buy" type="button" role="tab" aria-controls="pills-buy" aria-selected="true">Buy</button>
               <button class="col nav-link select-red" id="pills-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-sell" type="button" role="tab" aria-controls="pills-sell" aria-selected="false">Sell</button>
             </div>
@@ -1104,22 +1105,22 @@
                         <div class="pb-2">Avbl <span class="">-USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27439.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
@@ -1129,22 +1130,22 @@
                         <div class="pb-2">Avbl <span class="">-USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="66569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit text-light">Total</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">USDT</span>
+                          <span class="input-group-text limit text-secondary">Total</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
@@ -1154,27 +1155,27 @@
                         <div class="pb-2">Avbl <span class="">- USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Stop</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Stop</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="5637.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Limit</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Limit</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="39483.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg" >
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
@@ -1204,79 +1205,79 @@
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-md-limit" role="tabpanel" aria-labelledby="pills-md-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                      <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-md-market" role="tabpanel" aria-labelledby="pills-md-market-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                         <form>
                           <div class="input-group input-group-lg mb-3 market-value ">
-                            <span class="input-group-text market limit">Price</span>
-                            <span class="form-control text-light text-end market limit pe-1 ">Market</span>
-                            <span class="input-group-text text-light market limit ">USDT</span>
+                            <span class="input-group-text market limit text-secondary">Price</span>
+                            <span class="form-control text-end market limit pe-1 dark-limit">Market</span>
+                            <span class="input-group-text  market limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit text-light">Amount</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">BTC</span>
+                            <span class="input-group-text limit text-secondary">Amount</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">BTC</span>
                           </div>
                           <input type="range" class="form-range" id="customRange1">
                         </form>
-                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                          <button class="text-warning bg-transparent log-in">Log In</button>
-                          <div class="text-light">or</div>
-                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                          <button class="text-warning history">Log In</button>
+                          <div class="or">or</div>
+                          <button class="text-warning history">Register Now</button>
                       </div>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-md-stop-limit" role="tabpanel" aria-labelledby="pills-md-stop-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                         <form>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Stop</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">USDT</span>
+                            <span class="input-group-text limit text-secondary">Stop</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" value="24569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Limit</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">USDT</span>
+                            <span class="input-group-text limit text-secondary">Limit</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" value="255569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Amount</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">BTC</span>
+                            <span class="input-group-text limit text-secondary">Amount</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">BTC</span>
                           </div>
                           <input type="range" class="form-range" id="customRange1">
                         </form>
-                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                          <button class="text-warning bg-transparent log-in">Log In</button>
-                          <div class="text-light">or</div>
-                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                          <button class="text-warning history">Log In</button>
+                          <div class="or">or</div>
+                          <button class="text-warning  history">Register Now</button>
                       </div>
                       </div>
                     </div>
@@ -1312,80 +1313,80 @@
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-xs-cross-buy-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-xs-cross-buy-market" role="tabpanel" aria-labelledby="pills-xs-cross-buy-market-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit ">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit text-light">Total</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">USDT</span>
+                          <span class="input-group-text limit text-secondary">Total</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-xs-cross-buy-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-buy-stop-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">- USDT</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">- USDT</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Stop</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Stop</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
                           <span class="input-group-text limit">Limit</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                      <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
@@ -1415,79 +1416,79 @@
                   <div class="tab-content working3" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-xs-cross-limit" role="tabpanel" aria-labelledby="pills-xs-cross-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                       <form>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Price</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit ">USDT</span>
+                          <span class="input-group-text limit text-secondary">Price</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">USDT</span>
                         </div>
                         <div class="input-group input-group-lg mb-3 input-value">
-                          <span class="input-group-text limit">Amount</span>
-                          <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                          <span class="input-group-text text-light limit">BTC</span>
+                          <span class="input-group-text limit text-secondary">Amount</span>
+                          <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                          <span class="input-group-text limit dark-limit">BTC</span>
                         </div>
                         <input type="range" class="form-range" id="customRange1">
                       </form>
-                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                      <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                        <button class="text-warning bg-transparent log-in">Log In</button>
-                        <div class="text-light">or</div>
-                        <button class="text-warning bg-transparent log-in">Register Now</button>
+                      <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                      <div class="d-flex gap-2 p-2  align-items-center justify-content-center rounded login-bg">
+                        <button class="text-warning history">Log In</button>
+                        <div class="or">or</div>
+                        <button class="text-warning history">Register Now</button>
                     </div>
                    
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-xs-cross-market" role="tabpanel" aria-labelledby="pills-xs-cross-market-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                         <form>
                           <div class="input-group input-group-lg mb-3 market-value ">
-                            <span class="input-group-text market limit">Price</span>
-                            <span class="form-control text-light text-end market limit pe-1 ">Market</span>
-                            <span class="input-group-text text-light market limit ">USDT</span>
+                            <span class="input-group-text market limit text-secondary">Price</span>
+                            <span class="form-control text-end market limit pe-1 dark-limit">Market</span>
+                            <span class="input-group-text market limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit text-light">Amount</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">BTC</span>
+                            <span class="input-group-text limit text-secondary">Amount</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">BTC</span>
                           </div>
                           <input type="range" class="form-range" id="customRange1">
                         </form>
-                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                          <button class="text-warning bg-transparent log-in">Log In</button>
-                          <div class="text-light">or</div>
-                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                          <button class="text-warning history">Log In</button>
+                          <div class="or">or</div>
+                          <button class="text-warning history">Register Now</button>
                       </div>
                       </div>
                     </div>
                     <div class="tab-pane fade" id="pills-xs-cross-stop-limit" role="tabpanel" aria-labelledby="pills-xs-cross-stop-limit-tab">
                       <div class="col">
-                        <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                        <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                         <form>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Stop</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">USDT</span>
+                            <span class="input-group-text limit text-secondary">Stop</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Limit</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">USDT</span>
+                            <span class="input-group-text limit text-secondary">Limit</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">USDT</span>
                           </div>
                           <div class="input-group input-group-lg mb-3 input-value">
-                            <span class="input-group-text limit">Amount</span>
-                            <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text text-light limit">BTC</span>
+                            <span class="input-group-text limit text-secondary">Amount</span>
+                            <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text limit dark-limit">BTC</span>
                           </div>
                           <input type="range" class="form-range" id="customRange1">
                         </form>
-                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                          <button class="text-warning bg-transparent log-in">Log In</button>
-                          <div class="text-light">or</div>
-                          <button class="text-warning  bg-transparent log-in">Register Now</button>
+                        <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                        <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg" >
+                          <button class="text-warning history">Log In</button>
+                          <div class="or">or</div>
+                          <button class="text-warning history">Register Now</button>
                       </div>
                       </div>
                     </div>
@@ -1499,6 +1500,7 @@
             <!--finish sell-->
           </div>
         </div>
+  
       </article>
     </div>
         </section>
@@ -1506,17 +1508,17 @@
     </main>
     <!-- d-xs d-sm buy sell -->
 
-       <section class="d-block d-md-none d-lg-none bg-dark ">
+       <section class="d-block d-md-none d-lg-none">
 
         <div class="fixed-bottom">
-        <div class="row px-3 py-3 gap-2 m-0  bg-dark">
+        <div class="row px-3 py-3 gap-2 m-0 footer-bg">
           <button class="col py-2 nav-link text-light rounded " style="background-color: rgb(14, 203, 129);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Buy</button>
         <button class="col py-2 nav-link text-light rounded" style="background-color: rgb(246, 70, 93);" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Sell</button>
         </div>
 
         <!-- xs footer-->
         <section class="d-sm-block d-md-none">
-          <footer class="container-fluid d-flex justify-content-between align-items-center bg-black">
+          <footer class="container-fluid d-flex justify-content-between align-items-center footer-bgcolor footer-bg ">
             <a><i class="bi bi-arrow-left-right"></i></a>
            
               <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between align-items-center gap-2 footer-font-size">
@@ -1531,22 +1533,21 @@
         </section>
       </div>
 
-        <div class="offcanvas offcanvas-bottom bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-          <div class="offcanvas-header">
-            <nav>
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="xs-spot-tab" data-bs-toggle="tab" data-bs-target="#xs-spot" type="button" role="tab" aria-controls="nav-xs-spot" aria-selected="true">Spot</button>
-                <button class="nav-link" id="xs-spot-tab" data-bs-toggle="tab" data-bs-target="#xs-spot" type="button" role="tab" aria-controls="nav-xs-spot" aria-selected="false">Cross 5x</button>
+        <div class="offcanvas offcanvas-bottom " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header pe-3">
+            
+              <div class="nav nav-item" id="nav-tab" role="tablist">
+                <button class="nav-link active spot-except-border" id="xs-spot-tab" data-bs-toggle="tab" data-bs-target="#xs-spot" type="button" role="tab" aria-controls="nav-xs-spot" aria-selected="true">Spot</button>
+                <button class="nav-link spot-border" id="xs-spot-tab" data-bs-toggle="tab" data-bs-target="#xs-spot" type="button" role="tab" aria-controls="nav-xs-spot" aria-selected="false">Cross 5x</button>
               </div>
-            </nav>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <div class="tab-content text-light" id="nav-tabContent">
+            <div class="tab-content middle-last p-3" id="nav-tabContent">
               <div class="tab-pane fade show active" id="xs-spot" role="tabpanel" aria-labelledby="xs-spot-tab">
                 <!--buy sell spot -->
     
-                <div class="nav nav-pills buy-sell-nav-pills mb-3 mt-3 " id="pills-tab" role="tablist">
+                <div class="nav nav-pills buy-sell-nav-pills  " id="pills-tab" role="tablist">
                   <button class="col nav-link active select-green" id="pills-xs-buy-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-buy" type="button" role="tab" aria-controls="pills-xs-buy" aria-selected="true">Buy</button>
                   <button class="col nav-link select-red" id="pills-xs-sell-tab" data-bs-toggle="pill" data-bs-target="#pills-xs-sell" type="button" role="tab" aria-controls="pills-xs-sell" aria-selected="false">Sell</button>
                 </div>
@@ -1570,80 +1571,80 @@
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-xs-buy-limit" role="tabpanel" aria-labelledby="pills-xs-buy-limit-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">-USDT</span></div>
                           <form>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Price</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit ">USDT</span>
+                              <span class="input-group-text limit text-secondary">Price</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Amount</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit">BTC</span>
+                              <span class="input-group-text limit text-secondary">Amount</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">BTC</span>
                             </div>
                             <input type="range" class="form-range" id="customRange1">
                           </form>
-                          <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                            <button class="text-warning bg-transparent log-in">Log In</button>
-                            <div class="text-light">or</div>
-                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                            <button class="text-warning history">Log In</button>
+                            <div class="or">or</div>
+                            <button class="text-warning history">Register Now</button>
                         </div>
                        
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-xs-buy-market" role="tabpanel" aria-labelledby="pills-xs-buy-market-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">-USDT</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">-USDT</span></div>
                           <form>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Price</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1 " value="27569.45" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit ">USDT</span>
+                              <span class="input-group-text limit text-secondary">Price</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit text-light">Total</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit">USDT</span>
+                              <span class="input-group-text limit text-secondary">Total</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">USDT</span>
                             </div>
                             <input type="range" class="form-range" id="customRange1">
                           </form>
-                          <div class=" pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                            <button class="text-warning bg-transparent log-in">Log In</button>
-                            <div class="text-light">or</div>
-                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg">
+                            <button class="text-warning history">Log In</button>
+                            <div class="or">or</div>
+                            <button class="text-warning history">Register Now</button>
                         </div>
                        
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-xs-buy-stop-limit" role="tabpanel" aria-labelledby="pills-xs-buy-stop-limit-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">- USDT</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">- USDT</span></div>
                           <form>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Stop</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit ">USDT</span>
+                              <span class="input-group-text limit text-secondary">Stop</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Limit</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit ">USDT</span>
+                              <span class="input-group-text limit text-secondary">Limit</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Amount</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit">BTC</span>
+                              <span class="input-group-text limit text-secondary">Amount</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-textlimit dark-limit">BTC</span>
                             </div>
                             <input type="range" class="form-range" id="customRange1">
                           </form>
-                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="text-light ps-2">-- BTC</span></div>
-                          <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                            <button class="text-warning bg-transparent log-in">Log In</button>
-                            <div class="text-light">or</div>
-                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Buy <span class="dark-white ps-2">-- BTC</span></div>
+                          <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg" >
+                            <button class="text-warning history">Log In</button>
+                            <div class="or">or</div>
+                            <button class="text-warning history">Register Now</button>
                         </div>
                        
                           </div>
@@ -1673,79 +1674,79 @@
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-xs-limit" role="tabpanel" aria-labelledby="pills-xs-limit-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                           <form>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Price</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1"  value="27569.45" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit ">USDT</span>
+                              <span class="input-group-text limit text-secondary">Price</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit"  value="27569.45" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit ">USDT</span>
                             </div>
                             <div class="input-group input-group-lg mb-3 input-value">
-                              <span class="input-group-text limit">Amount</span>
-                              <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                              <span class="input-group-text text-light limit">BTC</span>
+                              <span class="input-group-text limit text-secondary">Amount</span>
+                              <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                              <span class="input-group-text limit dark-limit">BTC</span>
                             </div>
                             <input type="range" class="form-range" id="customRange1">
                           </form>
-                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                          <div class="d-flex gap-2 p-2 bg-dark align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                            <button class="text-warning bg-transparent log-in">Log In</button>
-                            <div class="text-light">or</div>
-                            <button class="text-warning bg-transparent log-in">Register Now</button>
+                          <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                          <div class="d-flex gap-2 p-2 align-items-center justify-content-center rounded login-bg" >
+                            <button class="text-warning history">Log In</button>
+                            <div class="or">or</div>
+                            <button class="text-warning history">Register Now</button>
                         </div>
                        
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-xs-market" role="tabpanel" aria-labelledby="pills-xs-market-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                             <form>
                               <div class="input-group input-group-lg mb-3 market-value ">
-                                <span class="input-group-text market limit">Price</span>
-                                <span class="form-control text-light text-end market limit pe-1 ">Market</span>
-                                <span class="input-group-text text-light market limit ">USDT</span>
+                                <span class="input-group-text market limit text-secondary">Price</span>
+                                <span class="form-control text-end market limit pe-1 dark-limit">Market</span>
+                                <span class="input-group-text market limit dark-limit">USDT</span>
                               </div>
                               <div class="input-group input-group-lg mb-3 input-value">
-                                <span class="input-group-text limit text-light">Amount</span>
-                                <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text text-light limit">BTC</span>
+                                <span class="input-group-text limit text-secondary">Amount</span>
+                                <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text limit dark-limit">BTC</span>
                               </div>
                               <input type="range" class="form-range" id="customRange1">
                             </form>
-                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                              <button class="text-warning bg-transparent log-in">Log In</button>
-                              <div class="text-light">or</div>
-                              <button class="text-warning  bg-transparent log-in">Register Now</button>
+                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg" >
+                              <button class="text-warning history">Log In</button>
+                              <div class="or">or</div>
+                              <button class="text-warning  history">Register Now</button>
                           </div>
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-xs-stop-limit" role="tabpanel" aria-labelledby="pills-xs-stop-limit-tab">
                           <div class="col">
-                            <div class="pb-2">Avbl <span class="">-BTC</span></div>
+                            <div class="pb-2 dark-white">Avbl <span class="">-BTC</span></div>
                             <form>
                               <div class="input-group input-group-lg mb-3 input-value">
-                                <span class="input-group-text limit">Stop</span>
-                                <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text text-light limit">USDT</span>
+                                <span class="input-group-text limit text-secondary">Stop</span>
+                                <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text limit dark-limit">USDT</span>
                               </div>
                               <div class="input-group input-group-lg mb-3 input-value">
-                                <span class="input-group-text limit">Limit</span>
-                                <input type="text" class="form-control text-light text-end limit pe-1" value="27569.45" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text text-light limit">USDT</span>
+                                <span class="input-group-text limit text-secondary">Limit</span>
+                                <input type="text" class="form-control text-end limit pe-1 dark-limit" value="27569.45" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text limit dark-limit">USDT</span>
                               </div>
                               <div class="input-group input-group-lg mb-3 input-value">
-                                <span class="input-group-text limit">Amount</span>
-                                <input type="text" class="form-control text-light text-end limit pe-1" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text text-light limit">BTC</span>
+                                <span class="input-group-text limit text-secondary">Amount</span>
+                                <input type="text" class="form-control text-end limit pe-1 dark-limit" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text limit dark-limit">BTC</span>
                               </div>
                               <input type="range" class="form-range" id="customRange1">
                             </form>
-                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="text-light ps-2">-- USDT</span></div>
-                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded" style="background-color: #2B3139;">
-                              <button class="text-warning bg-transparent log-in">Log In</button>
-                              <div class="text-light">or</div>
-                              <button class="text-warning  bg-transparent log-in">Register Now</button>
+                            <div class="text-secondary pb-1" style="font-size: 14px;">Max Sell <span class="dark-white ps-2">-- USDT</span></div>
+                            <div class="d-flex gap-2 py-2 align-items-center justify-content-center rounded login-bg">
+                              <button class="text-warning history">Log In</button>
+                              <div class="or">or</div>
+                              <button class="text-warning history">Register Now</button>
                           </div>
                           </div>
                         </div>
@@ -1759,17 +1760,16 @@
             </div>
           </div>
         </div>
-        
        </section>
 
     <section class="d-none d-sm-none d-md-block">
       <footer class="container-fluid fixed-bottom footer-bg d-flex justify-content-between">
-        <div class="align-items-center d-flex ">
+        <div class="align-items-center d-flex text-secondary">
           <i class="fas fa-wifi"></i>
-          <span class="px-2" style="font-size: 12px;">Connected</span>
+          <span class="px-2 " style="font-size: 12px;">Connected</span>
         </div>
 
-        <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between align-items-center gap-2 footer-font-size footer-support">
+        <ul class="navbar-nav d-flex flex-row footer-xs justify-content-between align-items-center gap-2 footer-font-size">
           <div class="d-none d-lg-block ">
             <div class="d-flex " style="align-items: center !important;">
               <a href="#" class="" ><i class="fas fa-sliders-h px-1 text-secondary"></i></a>
