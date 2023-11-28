@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="boot.css">
     <script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./s3.tradingview.com/"></script>
 
     <!-- <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link href="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"> -->
@@ -37,9 +38,9 @@
           <button class="nav-link d-lg-none pe-2" type="button" href="#">
             <i class="bi bi-gear fs-5"></i>
           </button>
-            <button class="nav-link d-flex align-items-center"  id="toggleMode">
+            <!-- <button class="nav-link d-flex align-items-center"  id="toggleMode">
               <i class="fa-regular fa-moon fs-5"></i>
-            </button>
+            </button> -->
         </div>
           
           <div class="collapse navbar-collapse justify-content-between px-3" id="navbarNavDropdown">
@@ -122,7 +123,7 @@
                     </li>
                     <li class="nav-item d-none d-md-none d-lg-block">
                         <button class="nav-link "  id="toggleMode">
-                            <i class="bi bi-gear fs-5"></i>
+                          <i class="fa-regular fa-moon fs-5"></i>
                         </button>
                     </li>
                 </ul>
@@ -330,7 +331,7 @@
                   </div>
               </div>
               <div class="col-8 p-0 chart-border">
-                <div style="height: 500px;">
+                <div style="height: auto;">
                   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active text-secondary" id="pills-chart-tab" data-bs-toggle="pill" data-bs-target="#pills-chart" type="button" role="tab" aria-controls="pills-chart" aria-selected="true">Chart</button>
@@ -341,7 +342,7 @@
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-chart" role="tabpanel" aria-labelledby="pills-chart-tab">
-                      <div class="px-3 py-2 text-secondary d-flex justify-content-between" style="border-bottom: 1px solid #2b3038;">
+                      <!-- <div class="px-3 py-2 text-secondary d-flex justify-content-between" style="border-bottom: 1px solid #2b3038;">
                         <div class="d-flex gap-3" style="font-size: 12px;">
                             <div class="text">Time</div>
                             <div class="text">1s</div>
@@ -362,10 +363,38 @@
                             <div><i class="fa-regular fa-boxes-stacked cursor"></i></div>
                
                         </div>
-                    </div>
-                    <!-- ............middle chart.......... -->
+                    </div> -->
+                    <!-- ............d-xl middle chart.......... -->
                     <div style=" border-bottom: 1px solid #2b3038;">
-        
+                      <div class="tradingview-widget-container">
+                        <div id="tradingview_e805321"></div>
+                        <script src="./s3.tradingview.com/s3.tradingview.com/tv.js"></script>
+                        <script>
+                              //  const initialTheme3 = isDarkMode() ? 'Dark' : 'Light';
+                          new TradingView.widget(
+                            {
+                              "width": "100%",
+                              "height": 450,
+                              "symbol": "BITSTAMP:BTCUSD",
+                              "interval": "D",
+                              "timezone": "Etc/UTC",
+                              "theme": "Dark",
+                              "style": "1",
+                              "locale": "en",
+                              "toolbar_bg": "#f1f3f6",
+                              "enable_publishing": false,
+                              "withdateranges": true,
+                              "hide_side_toolbar": false,
+                              "allow_symbol_change": true,
+                              "show_popup_button": true,
+                              "popup_width": "1000",
+                              "popup_height": "650",
+                              "container_id": "tradingview_e805321"
+                            }
+                          );
+                          //  });
+                        </script>
+                      </div>
                     </div>
                     </div>
                     <div class="tab-pane fade" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab">info details</div>
@@ -706,7 +735,7 @@
                 </div>
               </section>
               <section>
-                <div class="p-3" >
+                <div class="px-3 pt-3" >
                   <div class="d-flex  align-items-center justify-content-between">
                       <div class="d-flex align-items-center gap-1 fw-bolder">
                           <div >Top Movers</div>
@@ -735,7 +764,7 @@
                       </ul>
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
-                          <div class="">
+                          <div class="scroll-container" style="height: 70px; ">
                             <a href="#" class="row m-0 align-items-center text-decoration-none ">
                               <div class="col p-0 ">
 
@@ -752,6 +781,7 @@
                               </button>
                               </div>
                             </a>
+                            
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-change" role="tabpanel" aria-labelledby="pills-change-tab">change</div>
@@ -770,7 +800,7 @@
 
         <!-- d-xs d-sm chart, order book, trades-->
         <section class="container-fluid d-block d-sm-block d-md-none chart-border">
-          <div class="row" style="height: 500px;">
+          <div class="row" style="height: auto;">
             <div class="col px-0">
               <ul class="nav nav-pills mb-3 chart-pills  " id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -790,11 +820,10 @@
               <!-- .........START xs & sm chart, order book & trades details........ -->
               <div class="tab-content container-fluid " id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-xs-chart" role="tabpanel" aria-labelledby="chart">
-                  <div class=" text-secondary d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #2b3038;">
+                  <!-- <div class=" text-secondary d-flex justify-content-between align-items-center" style="border-bottom: 1px solid #2b3038;">
                     <div class="d-flex gap-2" style="font-size: 12px;">
                         <div class=" text">Time</div>
 
-                        <!-- <div class=" text d-flex align-items-center">1H <i class="fa-solid fa-caret-down px-2 text-secondary cursor"></i></div> -->
                         <select class="form-select form-select-color selector" aria-label="Default select example">
                             <option selected>1H</option>
                           <option value="1">1m</option>
@@ -819,10 +848,38 @@
                         </select>
             
                     </div>
-                </div>
+                </div> -->
                 <!-- ............middle chart.......... -->
                 <div style=" border-bottom: 1px solid #2b3038;">
-    
+                  <div class="tradingview-widget-container">
+                    <div id="tradingview_e805322"></div>
+                    <script src="./s3.tradingview.com/s3.tradingview.com/tv.js"></script>
+                    <script>
+                    
+ 
+                      new TradingView.widget(
+                        {
+                          "width": "100%",
+                          "height": 450,
+                          "symbol": "BITSTAMP:BTCUSD",
+                          "interval": "D",
+                          "timezone": "Etc/UTC",
+                          "theme": "Dark",
+                          "style": "1",
+                          "locale": "en",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "withdateranges": true,
+                          "hide_side_toolbar": false,
+                          "allow_symbol_change": true,
+                          "show_popup_button": true,
+                          "popup_width": "1000",
+                          "popup_height": "650",
+                          "container_id": "tradingview_e805322"
+                        }
+                      );
+                    </script>
+                  </div>
                 </div>
                 </div>
                 
@@ -928,7 +985,7 @@
             
             <div class="row lg-middle-border">
 
-            <div class="d-none d-md-block d-lg-none" style="height: 500px;">
+            <div class="d-none d-md-block d-lg-none" style="height: auto;">
               <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="border-bottom: 1px solid rgb(72, 71, 71);">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active text-secondary" id="pills-md-chart-tab" data-bs-toggle="pill" data-bs-target="#pills-md-chart" type="button" role="tab" aria-controls="pills-md-chart" aria-selected="true">Chart</button>
@@ -939,7 +996,7 @@
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-md-chart" role="tabpanel" aria-labelledby="pills-md-chart-tab">
-                  <div class="px-4 py-2 text-secondary d-flex justify-content-between" style="border-bottom: 1px solid #2b3038;">
+                  <!-- <div class="px-4 py-2 text-secondary d-flex justify-content-between" style="border-bottom: 1px solid #2b3038;">
                     <div class="d-flex gap-3" style="font-size: 12px;">
                         <div class=" text">Time</div> 
                         <div class=" text">1H</div>
@@ -955,10 +1012,36 @@
                       </select>
           
                   </div>
-                </div>
+                </div> -->
                 <!-- ............middle chart.......... -->
                 <div style=" border-bottom: 1px solid #2b3038;">
-    
+                  <div class="tradingview-widget-container">
+                    <div id="tradingview_e805323"></div>
+                    <script src="./s3.tradingview.com/s3.tradingview.com/tv.js"></script>
+                    <script>
+                      new TradingView.widget(
+                        {
+                          "width": "100%",
+                          "height": 450,
+                          "symbol": "BITSTAMP:BTCUSD",
+                          "interval": "D",
+                          "timezone": "Etc/UTC",
+                          "theme": "Dark",
+                          "style": "1",
+                          "locale": "en",
+                          "toolbar_bg": "#f1f3f6",
+                          "enable_publishing": false,
+                          "withdateranges": true,
+                          "hide_side_toolbar": false,
+                          "allow_symbol_change": true,
+                          "show_popup_button": true,
+                          "popup_width": "1000",
+                          "popup_height": "650",
+                          "container_id": "tradingview_e805323"
+                        }
+                      );
+                    </script>
+                  </div>
                 </div>
                 </div>
                 <div class="tab-pane fade text-light" id="pills-md-info" role="tabpanel" aria-labelledby="pills-md-info-tab">info details</div>
