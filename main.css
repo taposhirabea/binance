@@ -90,6 +90,16 @@ body {
     border-right: 1px solid #2B313A;
     color: #fff;
 }
+
+.logo-img {
+    position: absolute;
+}
+.logo {
+    font-size: 10px !important;
+}
+.header-section {
+    position: relative;
+}
 .header-border {
     border-top: 1px solid #EEF0F2;
     border-bottom: 1px solid #EEF0F2;
