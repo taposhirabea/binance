@@ -8,8 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
     <script src="https://kit.fontawesome.com/436c17474f.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="./s3.tradingview.com/"></script>
 
     <!-- <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -18,119 +19,219 @@
 
 </head>
 <body>
-    <header class="">
-    <nav class="navbar navbar-expand-lg footer-bg  py-0">
-        <div class="container-fluid py-2 header-section">
-          <a class="navbar-brand mx-0 py-0 logo-img" href="#">
-            <img src="images/name.png" class="logo" alt="" />
-          </a>
-         <div class="col d-flex justify-content-end align-items-center">
-          <div class="-none d-sm-block d-md-block d-lg-none text-end">
-            <button type="button" class="btn d-lg-none text-dark rounded register" style="padding: 3px 13px; background-color: #FCD535;">Register</button> 
+    <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+      <a class='navbar-brand' href='exchange-light.html'><img src="images/name.png" alt="logo"></a>
+      <div data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" >
             
-          </div>
-          <div data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" >
-            
-              <button class="nav-link d-lg-none px-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list fs-2"></i>
-            </button>
-          </div>
-          <button class="nav-link d-lg-none" type="button" href="#">
-            <i class="bi bi-gear fs-5"></i>
-          </button>
-            <!-- <button class="nav-link d-flex align-items-center"  id="toggleMode">
-              <i class="fa-regular fa-moon fs-5"></i>
-            </button> -->
-        </div>
-          
-          <div class="collapse navbar-collapse justify-content-between " id="navbarNavDropdown">
-            <ul class="navbar-nav header-navlist fw-bolder">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">buy crypto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">markets</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">Trade</a>
-                <ul class="dropdown-menu toggle-lists">
-                    <li><a class="dropdown-item" href="#">Spot</a></li>
-                    <li><a class="dropdown-item" href="#">Margin</a></li>
-                    <li><a class="dropdown-item" href="#">P2P</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle toggle-list" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Futures
-                </a>
-                <ul class="dropdown-menu toggle-lists" >
-                  <li><a class="dropdown-item" href="#">USDⓈ-M Futures</a></li>
-                  <li><a class="dropdown-item" href="#">COIN-M Futures</a></li>
-                  <li><a class="dropdown-item" href="#">Options</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">earn</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">Square</a>
-                <ul class="dropdown-menu toggle-lists">
-                    <li><a class="dropdown-item" href="#">Square</a></li>
-                    <li><a class="dropdown-item" href="#">Academy (Learn & Earn)</a></li>
-                    <li><a class="dropdown-item" href="#">Blog</a></li>
-                    <li><a class="dropdown-item" href="#">Research</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle toggle-list" href="#" data-bs-toggle="dropdown" aria-expanded="false">more</a>
-                <ul class="dropdown-menu toggle-lists">
-                    <li><a class="dropdown-item" href="#">VIP & Institutional</a></li>
-                    <li><a class="dropdown-item" href="#">Launchpad</a></li>
-                    <li><a class="dropdown-item" href="#">Mining Pool</a></li>
-                  </ul>
-              </li>
-            </ul>
+        <button class="nav-link d-lg-none px-2" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+      </button>
+    </div>
 
- <!-- ........login register button.......  -->
-            <div class="navbar-nav" style="overflow: hidden;">
-                <button class="col bg-transparent mx-2 log-in">Log In</button>
-                <button class="col text-dark rounded m-2 sign-btn px-2 " style="border: none; background-color: #FCD535;">Register</button>
-                <ul class="col navbar-nav gap-1 login" >
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link " aria-current="page" href="#">
-                            <i class="fa-solid fa-bell"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link " href="#">
-                            <i class="fa-solid fa-download "></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link" aria-current="page" href="#">
-                            <i class="fa-solid fa-globe"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-clipboard-question"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <a class="nav-link" aria-current="page" href="#">
-                            <i class="fa-solid fa-gear"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-none d-lg-block">
-                        <button class="nav-link "  id="toggleMode">
-                          <i class="fa-regular fa-moon fs-5"></i>
-                        </button>
-                    </li>
-                </ul>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Landing Page
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class='dropdown-item' href='landing-page-light.html'>Landing One</a>
+              <a class='dropdown-item' href='landing-page-light-two.html'>Landing Two</a>
             </div>
-          </div>         
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="exchange-light.html" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              Exchange
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Markets
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class='dropdown-item' href='markets-light.html'>Markets</a>
+              <a class='dropdown-item' href='market-capital-light.html'>Markets Line</a>
+              <a class='dropdown-item' href='market-capital-bar-light.html'>Markets Bar</a>
+              <a class='dropdown-item' href='market-overview-light.html'>Market Overview</a>
+              <a class='dropdown-item' href='market-screener-light.html'>Market Screener</a>
+              <a class='dropdown-item' href='market-crypto-light.html'>Market Crypto</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dashboard
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class='dropdown-item' href='settings-profile-light.html'>Profile</a>
+              <a class='dropdown-item' href='settings-wallet-light.html'>Wallet</a>
+              <a class='dropdown-item' href='settings-light.html'>Settings</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class='dropdown-item' href='technical-analysis-light.html'>Technical Analysis</a>
+              <a class='dropdown-item' href='cross-rates-light.html'>Cross Rates</a>
+              <a class='dropdown-item' href='symbol-info-light.html'>Symbol Info</a>
+              <a class='dropdown-item' href='heat-map-light.html'>Heat Map</a>
+              <a class='dropdown-item' href='signin-light.html'>Sign in</a>
+              <a class='dropdown-item' href='signup-light.html'>Sign up</a>
+              <a class='dropdown-item' href='404-light.html'>404</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto gap-3">
+          <li class="nav-item header-custom-icon">
+            <a class="nav-link" href="#" id="clickFullscreen">
+              <i class="fa-solid fa-expand"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown header-custom-icon">
+         
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bell-fill"></i>
+              <span class="circle-pulse"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-header d-flex align-items-center justify-content-between " style="border-bottom: 1px solid #f2f3f6;">
+                <p class="mb-0 font-weight-medium">6 New Notifications</p>
+                <a href="#!" class="text-muted text-decoration-none ">Clear all</a>
+              </div>
+              <div class="dropdown-body menu-item">
+                <a href="#!" class="dropdown-item d-flex">
+                  <div class="icon">
+                    <i class="icon ion-md-lock"></i>
+                  </div>
+                  <div class="content">
+                    <p>Account password change</p>
+                    <p class="sub-text text-muted">5 sec ago</p>
+                  </div>
+                </a>
+                <a href="#!" class="dropdown-item d-flex">
+                  <div class="icon">
+                    <i class="icon ion-md-alert"></i>
+                  </div>
+                  <div class="content">
+                    <p>Solve the security issue</p>
+                    <p class="sub-text text-muted">10 min ago</p>
+                  </div>
+                </a>
+                <a href="#!" class="dropdown-item d-flex">
+                  <div class="icon">
+                    <i class="icon ion-logo-android"></i>
+                  </div>
+                  <div class="content">
+                    <p>Download android app</p>
+                    <p class="sub-text text-muted">1 hrs ago</p>
+                  </div>
+                </a>
+                <a href="#!" class="dropdown-item d-flex">
+                  <div class="icon">
+                    <i class="icon ion-logo-bitcoin"></i>
+                  </div>
+                  <div class="content">
+                    <p>Bitcoin price is high now</p>
+                    <p class="sub-text text-muted">2 hrs ago</p>
+                  </div>
+                </a>
+                <a href="#!" class="dropdown-item d-flex">
+                  <div class="icon">
+                    <i class="icon ion-logo-usd"></i>
+                  </div>
+                  <div class="content">
+                    <p>Payment completed</p>
+                    <p class="sub-text text-muted">4 hrs ago</p>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer d-flex align-items-center justify-content-center ">
+                <a href="#!" class="text-decoration-none text-dark">View all</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown header-img-icon">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/avatar.svg" alt="avatar" style="width: 30px;">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-header d-flex flex-column align-items-center">
+                <div class="figure mb-3">
+                  <img src="assets/img/avatar.svg" alt="">
+                </div>
+                <div class=" text-center">
+                  <p class="name font-weight-bold mb-0">Tony Stark</p>
+                  <p class=" text-muted mb-3">tonystark@gmail.com</p>
+                </div>
+              </div>
+              <div class="dropdown-body">
+                <ul class="profile-nav">
+                  <li class="nav-item">
+                    <a class='nav-link' href='settings-profile-light.html'>
+                      <i class="icon ion-md-person"></i>
+                      <span>Profile</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class='nav-link' href='settings-wallet-light.html'>
+                      <i class="icon ion-md-wallet"></i>
+                      <span>My Wallet</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class='nav-link' href='settings-light.html'>
+                      <i class="icon ion-md-settings"></i>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                  <li class="nav-item" id="changeThemeLight">
+                    <a href="#!" class="nav-link">
+                      <i class="icon ion-md-sunny"></i>
+                      <span>Theme</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class='nav-link red' href='exchange-light.html'>
+                      <i class="icon ion-md-power"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
 
       <section class=" d-none d-sm-block "></section>
 
@@ -1887,6 +1988,13 @@
         </ul>
       </footer>
     </section>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/amcharts-core.min.js"></script>
+  <script src="assets/js/amcharts.min.js"></script>
+  <script src="assets/js/custom.js"></script>
     
 </body>
 
@@ -1934,5 +2042,6 @@ toggleModeButton.addEventListener("click", function () {
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       
+
      
 </html>

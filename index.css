@@ -181,7 +181,13 @@ a {
     /* color: rgb(209, 207, 203) !important; */
     text-transform: capitalize;
 }
-
+.navbar-toggler i {
+    font-size: 30px;
+    color: #4a4a4a;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
 .second-line a {
     font-size: 12px;
     color: #7f827a;
@@ -508,7 +514,7 @@ a {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 4px;
   }
   
   /* Track */
@@ -519,7 +525,7 @@ a {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #8b8585; 
+    background: #a9a4a4; 
     border-radius: 10px;
   }
   

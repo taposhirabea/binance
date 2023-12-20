@@ -288,7 +288,7 @@ header .nav-link.btn {
     position: absolute;
     right: 12px;
     top: 12px;
-}
+} 
 
 .circle-pulse:after {
     background-color: #0089ff;
