@@ -178,3 +178,7 @@
 .menu-item a {
     padding: 1rem;
 }
+.index-dropdown {
+    right: 0 !important;
+    left: auto !important;
+}
