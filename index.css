@@ -557,3 +557,12 @@ a {
       transform: translateX(-100%);
     }
   }
+
+  .dark-avatar {
+    color: #333;
+    background: white;
+}
+.dark-mode .dark-avatar {
+    color: #fff;
+    background: #1E2026;
+}
